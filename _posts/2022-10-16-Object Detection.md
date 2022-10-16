@@ -19,3 +19,23 @@ categories: MACHINE-VISION
 - (*) 2017: Transformers / [Transformers, _Attention is All You Need_](https://arxiv.org/pdf/1706.03762.pdf)
 - (*) 2018: Region Proposal / [RetinaNet](https://arxiv.org/pdf/1708.02002.pdf)
 - (*) 2020: Detection Transformers / [DETR, _End-to-end Object Detection with Transformers_](https://arxiv.org/pdf/2005.12872.pdf)
+
+#### 2015: Region-based Convolutional Networks (RCNN)
+
+
+#### 2015: Fast-RCNN
+
+#### 2015: Faster-RCNN
+
+#### 2015: You Only Look Once (YOLO)
+
+
+#### 2015: SingleShot Multibox Detector (SSD)
+
+
+#### 2017: Transformer Architecture
+
+#### 2018: RetinaNet
+
+
+#### 2020: Detection Transformers (DETR)
