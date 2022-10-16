@@ -15,10 +15,10 @@ categories: MACHINE-VISION
 - (*) 2015: Region Proposal Network, [_Faster-RCNN_](https://arxiv.org/pdf/1506.01497.pdf)
 - (*) 2015: YOLO, [_You Only Look Once: Unified, Real-Time Object Detection_](https://arxiv.org/pdf/1506.02640)
 - (*) 2015: SingleShot Multibox Detector, [SSD: SingleShot Multibox Detector](https://arxiv.org/pdf/1512.02325.pdf)
-- (*) 2017: Feature Pyramid Networks, [_Feature Pyramid Networks for Object Detection_](https://arxiv.org/pdf/1612.03144.pdf)
-- (*) 2017: Transformers, [_Attention is All You Need_](https://arxiv.org/pdf/1706.03762.pdf)
+- (*) 2017: Feature Pyramid Network, [_Feature Pyramid Networks for Object Detection_](https://arxiv.org/pdf/1612.03144.pdf)
+- (*) 2017: Transformer, [_Attention is All You Need_](https://arxiv.org/pdf/1706.03762.pdf)
 - (*) 2018: RetinaNet, [_Focal Loss for Dense Object Recognition_](https://arxiv.org/pdf/1708.02002.pdf)
-- (*) 2020: Detection [_End-to-end Object Detection with Transformers_](https://arxiv.org/pdf/2005.12872.pdf)
+- (*) 2020: Detection Transformer, [_End-to-end Object Detection with Transformers_](https://arxiv.org/pdf/2005.12872.pdf)
 
 #### 2015: Region-based Convolutional Networks (RCNN)  
 
