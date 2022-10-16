@@ -52,9 +52,6 @@ $$
 
 #### 2020: Detection Transformers (DETR)  
 
-
-```
 {% highlight python linenos%}
 my_var = "hello, world!"
 {% endhighlight %}
-```
