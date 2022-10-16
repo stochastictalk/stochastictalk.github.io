@@ -1,5 +1,7 @@
 ---
 title: "/"
+layout: home
+permalink: /
 ---
 
 <ul>
