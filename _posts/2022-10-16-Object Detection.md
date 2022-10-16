@@ -24,7 +24,7 @@ permalink_name: object-detection
 * (*) 2018: RetinaNet, [_Focal Loss for Dense Object Recognition_](https://arxiv.org/pdf/1708.02002.pdf)
 * (*) 2020: Detection Transformer, [_End-to-end Object Detection with Transformers_](https://arxiv.org/pdf/2005.12872.pdf)
 
-#### 2015: Region-based Convolutional Networks (RCNN)  
+#### Region-based Convolutional Networks (RCNN)  
 
 $$y = mx + c$$
 
@@ -33,36 +33,36 @@ y = \sum_{i=1}^n m_i x_i + c
 $$
 
 
-#### 2015: Fast-RCNN  
+#### Fast-RCNN  
 
 Some more text.
 
 
-#### 2015: Faster-RCNN  
+#### Faster-RCNN  
 
 Some more text.
 
-#### 2015: You Only Look Once (YOLO)  
-
-Some more text.
-
-
-#### 2015: SingleShot Multibox Detector (SSD)  
+#### You Only Look Once (YOLO)  
 
 Some more text.
 
 
-#### 2017: Transformer Architecture  
+#### SingleShot Multibox Detector (SSD)  
 
 Some more text.
 
 
-#### 2018: RetinaNet  
+#### Transformer Architecture  
 
 Some more text.
 
 
-#### 2020: Detection Transformers (DETR)  
+#### RetinaNet  
+
+Some more text.
+
+
+#### Detection Transformers (DETR)  
 
 {% highlight python %}
 my_var = "hello, world!"
