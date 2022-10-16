@@ -1,7 +1,8 @@
 ---
 title: "/stochastictalk"
 layout: home
-permalink: /home
+permalink: /
+permalink_name: /home
 ---
 
 <ul>
