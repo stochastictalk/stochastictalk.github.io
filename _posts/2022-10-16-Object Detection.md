@@ -1,4 +1,5 @@
 ---
+title: "/stochastictalk/object-detection"
 post-title: "Object Detection"
 date: 2022-10-16
 categories: MACHINE-VISION
