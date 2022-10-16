@@ -1,8 +1,7 @@
 ---
-title: "Object Detection Overview"
+title: "Object Detection"
 date: 2022-10-16
 categories: MACHINE-VISION
-permalink: /machine-vision/object-detection
 ---
 
 
