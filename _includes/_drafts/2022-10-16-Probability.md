@@ -2,8 +2,7 @@ One of my things that gets my goose is the awful experience most people have wit
 
 I also bank that many higher education students have also been taught statistics in a way that they find baffling, apart maybe from those that learn it from degree courses offered by maths or stats departments. Those departments don't really count anyway, since they have the benefit of dedicated experts and the chance to teach students across multiple courses. I'm worried about the students that study engineering, the natural sciences, or the social sciences, those that have to make do with a statistics course that is run in just six weeks by a professor who might not care if the students learn, or might be a bit foggy on the concepts themselves.
 
-I'm going to do my best to rectify that by giving the clearest explanations of concepts from probability and statistics I can. The only mathematical prerequisites for you are to know what a function is and what a set is. I'll also give lots of 'so whats' and highlight gotchas and places where things could get weird and confusing.
-
+I'm going to do my best to rectify that by giving the clearest explanations of concepts from probability and statistics I can. I'm basically aiming for a more opinionated version of [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html) for statistics [^1]. The only mathematical prerequisites for you are to know what a function is and what a set is. I'll also give lots of 'so whats' and highlight gotchas and places where people oftend find things getting weird and confusing.
 
 
 # Probability Models
@@ -31,3 +30,4 @@ Probability spaces are commonly used to model the real world. And, good news, yo
 
 To define the sample space $\Omega$, create a set where each element corresponds to a possible outcome of your experiment.  
 
+[^1] I know there's an applied statistics section of HyperMaths, but it omits tonnes of topics and has a physics-y leaning.
