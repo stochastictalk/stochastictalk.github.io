@@ -1,8 +1,9 @@
 lsi: false
 safe: true
-source: [your repo's top level directory]
+source: .
 incremental: false
 highlighter: rouge
+theme: hacker
 gist:
   noscript: false
 kramdown:
