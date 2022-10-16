@@ -7,9 +7,9 @@ categories: MACHINE-VISION
 
 ## Timeline
 
-- 2001: Viola-Jones object detection framework, [_Rapid Object Detection Using a Boosted Cascade of Simple Features_](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf)
-- 2005: Histogram of oriented gradients with a linear support vector machine, [_Histograms of Oriented Gradients for Human Detection_](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
-- 2012: Deep convolutional neural networks for large-scale image classification, [_ImageNet Classification with Deep Neural Networks_](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+- 2001: Viola-Jones, [_Rapid Object Detection Using a Boosted Cascade of Simple Features_](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf)
+- 2005: HOGs with a linear SVM, [_Histograms of Oriented Gradients for Human Detection_](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
+- 2012: Deep convolutional neural networks, [_ImageNet Classification with Deep Neural Networks_](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
 - (*) 2013: Region-based Convolutional Neural Network (RCNN), [_Rich feature hierarchies for accurate object detection and semantic segmentation_](https://arxiv.org/pdf/1311.2524.pdf)
 - (*) 2015: Fast RCNN, [_Fast R-CNN_](https://arxiv.org/pdf/1504.08083.pdf)
 - (*) 2015: Region Proposal Network, [_Faster-RCNN_](https://arxiv.org/pdf/1506.01497.pdf)
@@ -21,6 +21,12 @@ categories: MACHINE-VISION
 - (*) 2020: Detection [_End-to-end Object Detection with Transformers_](https://arxiv.org/pdf/2005.12872.pdf)
 
 #### 2015: Region-based Convolutional Networks (RCNN)  
+
+$$y = mx + c$$
+
+$$
+y = \sum_{i=1}^n m_i x_i + c
+$$
 
 
 #### 2015: Fast-RCNN  
