@@ -52,6 +52,6 @@ $$
 
 #### 2020: Detection Transformers (DETR)  
 
-{% highlight python linenos%}
+{% highlight python %}
 my_var = "hello, world!"
 {% endhighlight %}
