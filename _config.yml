@@ -3,6 +3,7 @@ safe: true
 source: .
 incremental: false
 highlighter: rouge
+title: "/stochastictalk"
 remote_theme: "tareqdandachi/jekyll-shell-theme"
 plugins:
 - jekyll-remote-theme 
