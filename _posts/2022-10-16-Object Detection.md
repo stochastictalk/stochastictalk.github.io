@@ -1,5 +1,5 @@
 ---
-title: "Object Detection"
+post-title: "Object Detection"
 date: 2022-10-16
 categories: MACHINE-VISION
 layout: post
