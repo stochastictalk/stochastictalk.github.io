@@ -33,11 +33,12 @@ y = \sum_{i=1}^n m_i x_i + c
 $$
 
 
-#### 2015: Fast-RCNN  
+#### 2015: Fast-RCNN  
 
 Some more text.
 
-#### 2015: Faster-RCNN  
+
+#### 2015: Faster-RCNN  
 
 Some more text.
 
@@ -45,17 +46,21 @@ Some more text.
 
 Some more text.
 
+
 #### 2015: SingleShot Multibox Detector (SSD)  
 
 Some more text.
 
-#### 2017: Transformer Architecture  
+
+#### 2017: Transformer Architecture  
 
 Some more text.
+
 
 #### 2018: RetinaNet  
 
 Some more text.
+
 
 #### 2020: Detection Transformers (DETR)  
 
