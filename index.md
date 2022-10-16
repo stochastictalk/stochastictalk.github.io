@@ -1,5 +1,5 @@
 ---
-title: "/home"
+title: "/stochastictalk"
 layout: home
 permalink: /home
 ---
