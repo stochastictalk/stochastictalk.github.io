@@ -4,6 +4,7 @@ date: 2022-10-16
 categories: MACHINE-VISION
 layout: post
 usemathjax: true
+permalink_name: object-detection
 ---
 
 
