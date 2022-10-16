@@ -1,6 +1,22 @@
 ---
-title: "Welcome to my blog"
-date: 2019-01-20
+title: "Object Detection Overview"
+date: 2022-10-16
 categories: MACHINE-VISION
 permalink: /machine-vision/object-detection
 ---
+
+
+## Timeline
+
+- 2001: [Viola-Jones object detection framework, _Rapid Object Detection Using a Boosted Cascade of Simple Features_](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf)
+- 2005: [Histogram of oriented gradients with a linear support vector machine, _Histograms of Oriented Gradients for Human Detection_](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
+- 2012: [Deep convolutional neural networks for large-scale image classification, _ImageNet Classification with Deep Neural Networks_](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+- (*) 2013: Region Proposal / [Region-based Convolutional Neural Network (RCNN), _Rich feature hierarchies for accurate object detection and semantic segmentation_](https://arxiv.org/pdf/1311.2524.pdf)
+- (*) 2015: Region Proposal / [Fast RCNN, _Fast R-CNN_](https://arxiv.org/pdf/1504.08083.pdf)
+- (*) 2015: Region Proposal / [Region Proposal Network, _Faster-RCNN_](https://arxiv.org/pdf/1506.01497.pdf)
+- (*) 2015: [YOLO, _You Only Look Once: Unified, Real-Time Object Detection_](https://arxiv.org/pdf/1506.02640)
+- (*) 2015: [SingleShot Multibox Detector](https://arxiv.org/pdf/1512.02325.pdf)
+- (*) 2017: Region Proposal / [Feature Pyramid Networks, _Feature Pyramid Networks for Object Detection_](https://arxiv.org/pdf/1612.03144.pdf)
+- (*) 2017: Transformers / [Transformers, _Attention is All You Need_](https://arxiv.org/pdf/1706.03762.pdf)
+- (*) 2018: Region Proposal / [RetinaNet](https://arxiv.org/pdf/1708.02002.pdf)
+- (*) 2020: Detection Transformers / [DETR, _End-to-end Object Detection with Transformers_](https://arxiv.org/pdf/2005.12872.pdf)
