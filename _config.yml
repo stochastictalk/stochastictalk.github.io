@@ -9,6 +9,7 @@ plugins:
 - jemoji
 - jekyll-sitemap
 - jekyll-seo-tag
+- jekyll-last-modified-at
 gist:
   noscript: false
 github_username: stochastictalk
@@ -17,3 +18,5 @@ kramdown:
   syntax_highlighter: rouge
 header_pages:
   - index.md
+last-modified-at:
+    date-format: '%y-%b-%d'
