@@ -1,5 +1,5 @@
 ---
-title: "stochastictalk"
+title: "/"
 ---
 
 <ul>
