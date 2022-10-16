@@ -3,7 +3,9 @@ safe: true
 source: .
 incremental: false
 highlighter: rouge
-theme: hacker
+remote_theme: "tareqdandachi/jekyll-shell-theme"
+plugins:
+- jekyll-remote-theme 
 gist:
   noscript: false
 kramdown:
