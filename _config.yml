@@ -4,6 +4,8 @@ source: .
 incremental: false
 highlighter: rouge
 title: "/stochastictalk"
+url: "https://stochastictalk.github.io"
+baseurl: "/"
 remote_theme: "tareqdandachi/jekyll-shell-theme"
 plugins:
 - jekyll-remote-theme 
