@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+    <title>
+      /stochastictalk/statistics
+    </title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script type="text/javascript" src=""></script>  
+    <!-- for mathjax support -->
+    
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+      <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="/assets/js/codeblock.js"></script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>/stochastictalk/statistics | /stochastictalk</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="/stochastictalk/statistics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="One of my things that gets my goose is the awful experience most people have with probability and statistics. I certainly don’t blame anyone except the Department for Education and universities for this. For lots of these people, that they recoil at the mention of these topics can be attributed to the stress of forced and hamfisted exposure to maths when they were younger, the negative experience of being pushed into ‘important’ exams which they didn’t feel prepared for. The bland ‘crank the handle’ type work that’s prolific in UK high school maths doesn’t help. In the rush for students to memorize barrelfuls of statistical devices and their operation, the philosophical thrills of randomness, uncertainty, and the logic of science are lost in the crush." />
+<meta property="og:description" content="One of my things that gets my goose is the awful experience most people have with probability and statistics. I certainly don’t blame anyone except the Department for Education and universities for this. For lots of these people, that they recoil at the mention of these topics can be attributed to the stress of forced and hamfisted exposure to maths when they were younger, the negative experience of being pushed into ‘important’ exams which they didn’t feel prepared for. The bland ‘crank the handle’ type work that’s prolific in UK high school maths doesn’t help. In the rush for students to memorize barrelfuls of statistical devices and their operation, the philosophical thrills of randomness, uncertainty, and the logic of science are lost in the crush." />
+<link rel="canonical" href="https://stochastictalk.github.io/statistics/2022/10/16/Overview.html" />
+<meta property="og:url" content="https://stochastictalk.github.io/statistics/2022/10/16/Overview.html" />
+<meta property="og:site_name" content="/stochastictalk" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-16T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="/stochastictalk/statistics" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-16T16:23:17-05:00","datePublished":"2022-10-16T00:00:00-05:00","description":"One of my things that gets my goose is the awful experience most people have with probability and statistics. I certainly don’t blame anyone except the Department for Education and universities for this. For lots of these people, that they recoil at the mention of these topics can be attributed to the stress of forced and hamfisted exposure to maths when they were younger, the negative experience of being pushed into ‘important’ exams which they didn’t feel prepared for. The bland ‘crank the handle’ type work that’s prolific in UK high school maths doesn’t help. In the rush for students to memorize barrelfuls of statistical devices and their operation, the philosophical thrills of randomness, uncertainty, and the logic of science are lost in the crush.","headline":"/stochastictalk/statistics","mainEntityOfPage":{"@type":"WebPage","@id":"https://stochastictalk.github.io/statistics/2022/10/16/Overview.html"},"url":"https://stochastictalk.github.io/statistics/2022/10/16/Overview.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  </head>
+
+  <body class="">
+
+    <header>
+  <div class="menu">
+    <ul>
+      <li class="page_title">/stochastictalk/statistics</li>
+<li><a href="/">/home</a></li>
+</ul>
+  </div>
+</header>
+
+    <p>One of my things that gets my goose is the awful experience most people have with probability and statistics. I certainly don’t blame anyone except the Department for Education and universities for this. For lots of these people, that they recoil at the mention of these topics can be attributed to the stress of forced and hamfisted exposure to maths when they were younger, the negative experience of being pushed into ‘important’ exams which they didn’t feel prepared for. The bland ‘crank the handle’ type work that’s prolific in UK high school maths doesn’t help. In the rush for students to memorize barrelfuls of statistical devices and their operation, the philosophical thrills of randomness, uncertainty, and the logic of science are lost in the crush.</p>
+
+<p>I also bank that many higher education students have also been taught statistics in a way that they find baffling, apart maybe from those that learn it from degree courses offered by maths or stats departments. Those departments don’t really count anyway, since they have the benefit of dedicated experts and the chance to teach students across multiple courses. I’m worried about the students that study engineering, the natural sciences, or the social sciences, those that have to make do with a statistics course that is run in just six weeks by a professor who might not care if the students learn, or might be a bit foggy on the concepts themselves.</p>
+
+<p>I’m going to do my best to rectify that by giving the clearest explanations of concepts from probability and statistics I can. I’m basically aiming for a more opinionated version of <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">HyperPhysics</a> for statistics [^1]. The only mathematical prerequisites for you are to know what a function is and what a set is. I’ll also give lots of ‘so whats’ and highlight gotchas and places where people oftend find things getting weird and confusing.</p>
+
+<h1 id="probability-models">Probability Models</h1>
+
+<p>Most students first meet statistical modelling via the linear model, a bottom-first approach which provides exposure to an instance of probability model. To my mind, this muddies the water slightly since students tend to picture the ‘line’ or a linear equation \(y = ax_1 + b\) first, and consider it as a probability distribution second (if they get it at all). There are few situations I’d want to go into bottom-first, and I wonder if a more productive line of attack is</p>
+<ol>
+  <li>introduce the concept of a probability model in the abstract,</li>
+  <li>then provide the linear model as one of several examples.</li>
+</ol>
+
+<p>Probability is a tool that allows us to reason about possible outcomes of an experiment. Here I mean ‘experiment’ really broadly, taking this definition:</p>
+
+<blockquote>
+  <p><strong>Experiment</strong> - (noun) the making of an observation.</p>
+</blockquote>
+
+<p>Examples:</p>
+<ul>
+  <li>Finding out what’s in that big parcel under the Christmas Tree.</li>
+  <li>Looking up the 20th decimal value of \(\exp\).</li>
+  <li>Learning how long you live for.</li>
+  <li>Rolling a dice or finding out what colour ball you take out of that blasted bag.</li>
+</ul>
+
+<p>A probability space is a triple \((\Omega, \mathcal{F}, P)\) containing</p>
+<ul>
+  <li>a <em>sample space</em> \(\Omega\), the set of all possible outcomes.</li>
+  <li>an <em>event space</em> \(\mathcal{F}\), which contains <em>events</em> - sets of outcomes from \(\mathcal{\Omega}\).</li>
+  <li>a <em>probability measure</em> \(P: \mathcal{F} \rightarrow [0, 1]\).</li>
+</ul>
+
+<p>Probability spaces are commonly used to model the real world. And, good news, you too can create a probability model by defining a probability space.</p>
+
+<p>To define the sample space \(\Omega\), create a set where each element corresponds to a possible outcome of your experiment.</p>
+
+<p>[^1] I know there’s an applied statistics section of HyperMaths, but it omits tonnes of topics and has a physics-y leaning.</p>
+
+
+
+
+    <footer>
+
+    /stochastictalk/statistics
+    <br><br>
+     <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20"> <a href="https://github.com/stochastictalk">@stochastictalk</a> 
+    
+  
+  </footer>
+
+  </body>
+</html>
