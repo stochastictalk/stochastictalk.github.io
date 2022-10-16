@@ -54,5 +54,7 @@ $$
 
 
 ```
+{% highlight python linenos%}
 my_var = "hello, world!"
+{% endhighlight %}
 ```
