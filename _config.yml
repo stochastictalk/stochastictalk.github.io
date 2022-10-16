@@ -6,6 +6,9 @@ highlighter: rouge
 remote_theme: "tareqdandachi/jekyll-shell-theme"
 plugins:
 - jekyll-remote-theme 
+- jemoji
+- jekyll-sitemap
+- jekyll-seo-tag
 gist:
   noscript: false
 github_username: stochastictalk
