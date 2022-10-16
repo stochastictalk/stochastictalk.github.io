@@ -35,21 +35,27 @@ $$
 
 #### 2015: Fast-RCNN  
 
+Some more text.
 
 #### 2015: Faster-RCNN  
 
+Some more text.
 
 #### 2015: You Only Look Once (YOLO)  
 
+Some more text.
 
 #### 2015: SingleShot Multibox Detector (SSD)  
 
+Some more text.
 
 #### 2017: Transformer Architecture  
 
+Some more text.
 
 #### 2018: RetinaNet  
 
+Some more text.
 
 #### 2020: Detection Transformers (DETR)  
 
