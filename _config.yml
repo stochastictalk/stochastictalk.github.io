@@ -13,6 +13,7 @@ plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-last-modified-at
+- jekyll-toc
 gist:
   noscript: false
 github_username: stochastictalk
