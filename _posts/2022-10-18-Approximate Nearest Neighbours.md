@@ -13,7 +13,7 @@ toc: true
 
 This post is a briefing on nearest neighbours and approximate nearest neighbours algorithms for people that want to use them for vector search.
 
-<hr class="solid-green">
+<hr class="border-gradient border-gradient-green">
 
 # Exhaustive Neighbours, Approximate Neighbours, and Vector Search  
 <a href="#top">↑ to top ↑</a>
@@ -46,7 +46,7 @@ As you might be able to tell, that word 'index' is going to come up a lot here. 
 
 It's the filing cabinet of a nearest neighbours algorithm. 
 
-<hr class="solid-green">
+<hr class="border-gradient border-gradient-green">
 
 # Exhaustive Nearest Neighbours
 <a href="#top">↑ to top ↑</a>
@@ -56,13 +56,15 @@ Three common (i.e. they're in `sklearn`'s `NearestNeighbours` implementation) al
 * ball tree,  
 * $$k$$-dimensional tree.
 
-<hr class="dashed-white">
+<hr class="border-gradient border-gradient-bg">
 
 ## Brute-force
 
 <a href="#top">↑ to top ↑</a>
 
 Something
+
+<hr class="border-gradient border-gradient-bg">
 
 ## $$k$$-dimensional Tree
 
@@ -72,6 +74,7 @@ A $$k$$-dimensional tree is a binary data structure that partitions the data's s
 
 A vector is added to the index by answering the tree's sequence of yes/no questions about the vector's elements.
 
+<hr class="border-gradient border-gradient-bg">
 
 ## Ball Tree
 
@@ -83,7 +86,7 @@ Instead of splitting the space into boxes, a ball tree splits it into nested bal
 [^1] Upper bound can be tightened to $$\|q - C_p\|$$, where $$C_p$$ is the centre of the ball's parent.
 
 
----
+<hr class="border-gradient border-gradient-green">
 
 # Approximate Nearest Neighbours 
 
@@ -97,6 +100,8 @@ Corresponds to brute-force exhaustive nearest neighbours.
 `IndexFlatL2` is
 - not a trained index
 - exhaustive search (compare query vector to all vectors in the index)
+
+<hr class="border-gradient border-gradient-bg">
 
 ## Inverted File Index
 
@@ -112,6 +117,8 @@ Inverted File Index
 - each data point is assigned to the Voronoi cell centered on a cluster centroid
 - `nprobe` configures number of adjacent cells to search
 
+<hr class="border-gradient border-gradient-bg">
+
 ## Minhashing and Banding
 
 Locality sensitive hashing (shingling, minhashing, banded LSH)
@@ -124,6 +131,8 @@ Locality sensitive hashing (shingling, minhashing, banded LSH)
 - Can solve analytically for probability of a pair being a candidate pair via $$P = 1 - (1 - s^r)^b$$, where $$b$$ is the number of bands, $$r$$ is the number of rows in each band, and $$s$$ is the similarity score (Jacard index).
 
 
+<hr class="border-gradient border-gradient-bg">
+
 ## Random Projection
 
 A kind of locality-sensitive hashing.
@@ -133,6 +142,8 @@ A kind of locality-sensitive hashing.
 - compare distance of hashes using Hamming distance (number of mismatches).
 - this is the index that FAISS's `IndexLSH` corresponds to.
 
+
+<hr class="border-gradient border-gradient-bg">
 
 ## Product Quantisation
 
@@ -150,6 +161,8 @@ A kind of locality-sensitive hashing.
 - 'Lower recall rates are a major drawback of PQ'
 - Can be combined with inverted file index - Voronoi cells are constructed for the quantized vectors.
 - Optimized Product Quantization (OPQ) works by rotating vectors to flatten the distribution of values across the subvectors used in product quantization.
+
+<hr class="border-gradient border-gradient-bg">
 
 ## Hierarchical Navigable Small World Graphs
 
@@ -179,6 +192,8 @@ Navigable Small World Graphs
 - Searching the graph proceeds starting from an _entry point_. We search the neighbours of the entry point and move to the one that is closest to the query vector. This repeats until we are at a vertex which is close to the query than all of its neighbours. This algorithm is called 'greedy routing'.
 - To minimize the probability of stopping in a local minima, we can increase the degree of vertices, but this increases network complexity (and therefore storage space and search time). So the average degree of vertices needs to be balanced.
 
+
+<hr class="border-gradient border-gradient-bg">
 
 ## Bonus: Index Composition
 
