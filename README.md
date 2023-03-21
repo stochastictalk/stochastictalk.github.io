@@ -1,6 +1,8 @@
 # stochastictalk.github.io
 
-My home for self-aggrandizing egocentric content!
+```
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+```
 
 To work with a hotloading version of the site on port 4000:
 ```
