@@ -65,6 +65,9 @@ Compensating for the sensory blindspots of people
 
 Enhancing the senses of people
 
+### Risk-seeking behaviours
+
+Government adopts slowly for risk-aversion reasons, people adopt quickly because it works and is offered by companies that bear no risk
 
 ## Climbing the modality overhang 
 
@@ -77,4 +80,8 @@ Enhancing the senses of people
 
 Recipe: "Describe a process for answering this question/performing this task", followed by "Execute the process you described".
 
+## Predictions
 
+* Video-speech models within five years.
+* A significant shift in the dominant mode of human-computer interface away from text and towards speech within five years.
+* AI policy becoming as popular a topic as climate change policy within ten years.
