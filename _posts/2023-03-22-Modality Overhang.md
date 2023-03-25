@@ -31,6 +31,10 @@ A multimodal model's central function is to represent how media tends to co-occu
 Why does the model output this response? 
 
 Basic ingredients
+- GPT-3.5: autoregressive pre-training (`text-), supervised fine-tuning on human-generated labelled prompts, then reinforcement learning from human feedback (fit a reward model to human preferences, use this reward model to further fine-tune the model using proximal policy optimisation).
+- Alpaca: autoregressive pre-training (the [7B LLaMA model](https://arxiv.org/abs/2302.13971)), self-instruct instruction generation (using `text-davinci-3.5`) from 175 instruct seed examples and supervised fine-tuning.
+
+- LLaMA: used exclusively publicly available data
 
 ## Multimodal models vs Language models
 
@@ -46,6 +50,10 @@ I should also mention that the data is there, waiting for a model to be fit to i
 
 This combination of facts leads me to think that joint video-speech models are not far off. The convenience of this interface will be in uncomfortable conflict with expectations of privacy. 
 
+### Human-computer interaction
+
+Massively overindexed on text (e.g. filesystem)
+
 ### Breaking the ChatGPT paradigm
 
 The interaction paradigm of ChatGPT is a one-to-one conversation in which the assistant leverages no context from other conversations, and has no internal dialogue.
@@ -56,6 +64,8 @@ There are many ways this paradigm can be broken:
 * The assistant could also be configured with an alternative intrinsic motivation besides prioritising responses that are preferred by users in general. An inherent limitation of RLHF is that the learnt preferences are averaged across many users.
 * An internal dialogue could exist within the agent. This is explicitly called out in the [sparks of AGI paper](https://arxiv.org/pdf/2303.12712.pdf): 
 > one of the main limitations of the model is that the architecture does not allow for an “inner dialogue” or a “scratchpad”, beyond its internal representations, that could enable it to perform multi-step computations or store intermediate results
+
+### Human-computer interaction
 
 ### Alien senses
 
