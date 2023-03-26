@@ -1,5 +1,7 @@
 # stochastictalk.github.io
 
+
+
 ```
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 ```
