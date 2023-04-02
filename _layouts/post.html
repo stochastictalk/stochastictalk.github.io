@@ -5,6 +5,10 @@ title:  "POSTS"
 
 {%- if page.detail_image -%}<img class="detail_header" src="{{ page.detail_image }}">{%- endif -%}
 
+{{ page.date | date_to_string: "ordinal" }}
+
+{% toc %}
+
 {{ content }}
 
 {{ last_modified_at }}

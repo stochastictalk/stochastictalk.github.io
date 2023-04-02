@@ -23,3 +23,7 @@ header_pages:
   - index.md
 last-modified-at:
     date-format: '%y-%b-%d'
+toc:
+  enabled: true
+  start_level: 1
+  end_level: 4

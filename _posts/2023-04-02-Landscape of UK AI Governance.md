@@ -1,20 +1,32 @@
 ---
-title: "/stochastictalk/landscape-of-uk-ai-governance"
-post-title: "Landscape of UK AI Governance"
+title: "/stochastictalk/the-landscape-of-uk-ai-governance"
+post-title: "The Landscape of UK AI Governance"
 date: 2023-04-02
-categories: governance, policy, ai
+categories: GOVERNANCE POLICY AI
 layout: post
 usemathjax: true
 permalink_name: uk-ai-governance
+toc: true
 ---
 
-Here I recap how the AI governance discussion has heated up and do my best to outline the current shape of UK AI policy.
+Here I recap how the AI governance discussion has heated up and outline the current shape and immediate future of UK AI policy.
 
-In the last two weeks AI has exploded into the public consciousness. This seems to be a consequence of
-* ChatGPT being accessible and very capable (and being [banned in Italy](https://www.bbc.co.uk/news/technology-65139406))
-* publication of Future of Life Institute's [Pause Giant AI Experiments letter](https://futureoflife.org/open-letter/pause-giant-ai-experiments/), which was signed by Yoshua Bengio, Stuart Russell, and Steve Wozniak
+
+# It's Getting Hot in Here
+
+In the last two weeks AI has ignited in the public consciousness. This seems to be a consequence of
+* ChatGPT being accessible and very capable. And [banned in Italy](https://www.bbc.co.uk/news/technology-65139406)
+* publication of the Future of Life Institute's [Pause Giant AI Experiments letter](https://futureoflife.org/open-letter/pause-giant-ai-experiments/), which was signed by Yoshua Bengio, Stuart Russell, and Steve Wozniak
 * the [Time magazine article by Eliezer Yudkowsky](https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/), containing such gems as 'be willing to destroy a rogue datacenter by airstrike'
-* [Balenciaga Pope](https://www.theguardian.com/technology/2023/apr/01/misinformation-mistakes-and-the-pope-in-a-puffer-what-rapidly-evolving-ai-can-and-cant-do) and [Harry Potter](https://www.youtube.com/watch?v=iE39q-IKOzA), and the [Trump arrest photographs](https://www.theguardian.com/technology/2023/apr/01/misinformation-mistakes-and-the-pope-in-a-puffer-what-rapidly-evolving-ai-can-and-cant-do)
+* [Balenciaga Pope](https://www.theguardian.com/technology/2023/apr/01/misinformation-mistakes-and-the-pope-in-a-puffer-what-rapidly-evolving-ai-can-and-cant-do) and [Harry Potter](https://www.youtube.com/watch?v=iE39q-IKOzA), the [Trump arrest photographs](https://www.theguardian.com/technology/2023/apr/01/misinformation-mistakes-and-the-pope-in-a-puffer-what-rapidly-evolving-ai-can-and-cant-do), and a cascade of other photorealistic synthetic images generated using Midjourney's Version 5 model
+
+There are several signals marking an abrupt increase in interest in AI governance outside of the typical Twitter clique: [Laura Kuenssberg is writing about it for the BBC](https://www.bbc.co.uk/news/uk-65147841), the White House ran [a press briefing](https://www.foxnews.com/politics/white-house-tight-lipped-push-congressional-intervention-rapid-ai-developments-heats) (the 'blueprint' is [here](https://www.whitehouse.gov/ostp/ai-bill-of-rights/)) specifically responding to the letter, and the Midjourney memes have gone viral.
+
+Simmering away beneath the surface of all this are concerns of foundation models violating image copyright (Midjourney ref), compromising the privacy of web users (ChatGPT ref), and spewing out code that was originally licensed as copyleft. Oh, and in tech specifically, many companies are no doubt desperately searching for a GPT-4-like open source model that has a more commercially permissive license than Meta's LLaMA.
+
+The letter strikes a notable contrast to these humdrum concerns, as would be expected of a letter from the organisation that previously published a fictionalised [video of small autonomous drones selectively executing innocents](https://www.youtube.com/watch?v=HipTO_7mUOw).
+
+# The Letter
 
 The letter pushed to the fore viscious disagreement on what should be done to regulate the development of AI. Notably absent from the letter's signatories are older figureheads of the field such as [Yann Le Cunn](https://twitter.com/ylecun/status/1640910484030255109?s=20), [Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?s=20), and Geoff Hinton. Unsurprisingly, the battery of superstar deep learning researchers from Bay Area tech companies haven't signed either.
 
@@ -32,48 +44,56 @@ The specific requests in the letter:
     * robust public funding for technical AI safety research
     * well-resourced institutions for coping with the dramatic economic and political disruptions
 
-Its strapline is clear: current policy isn't sufficient to mitigate some extremely serious risks, so not only do we need to accelerate the creation of governance institutions and policy, but we also need to slow down the growth of capability.
+The letter does not articulate a specific assessment of near-term risks (instead it references a set of canonical LessWrong x-risk books), but its strapline is clear: current policy isn't sufficient to mitigate some extremely serious risks, so not only do we need to accelerate the creation of governance institutions and policy, but we also need to slow down the growth of capability.
 
-The response to the letter from people who disagree with The Pause is variously:
+# Not the Letter
+
+The responses to the letter from people who disagree with it are variously:
 * It would allow geopolitical rivals to the United States the opportunity to 'catch up', which would be foolish.
 * It would create a significant opportunity cost because AI holds enormous promise to improve the wellbeing of people globally. Proponents of this position are presumably concerned about over-regulating development longer term.
 * Realistically, it would require government intervention to enact, which is undesirable if you don't want the government doing that sort of thing as a matter of principle.
 * In addition to some of the above being neglected, the existential and/or social and/or economic risks of AI are overstated and their time horizons are naively short.
 
-UK AI policy at the minute and in the near future (who, what they're doing):
-* 29th March policy whitepaper [A Pro-innovation Approach to AI Regulation](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach)
-* associated [impact assessment](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1147045/uk_ai_regulation_impact_assessment.pdf)
-* [National AI strategy](https://www.gov.uk/government/publications/national-ai-strategy)
-* the Department for Science, Innovation and Technology's [Office for Artificial Intelligence](https://www.gov.uk/government/organisations/office-for-artificial-intelligence)
-* the Alan Turing Institute, particularly its [AI Standards Hub](https://aistandardshub.org/)
-* Ministry of Defence published its own AI ethical principles and policy in June 2022
 
-Excerpts from the policy whitepaper's Exec Summary:
-* 'AI technologies are currently regulated through a complex patchwork of legal requirements'
-* 'we will not put these principles on a statutory footing initially' 'principles will be issued on a non-statutory basis and implemented by existing regulators' 'we will... evaluate whether the non-statutory framework is having the desired effect'
-* 'Following this initial period of implementation, and when parliamentary time allows, we anticipate introducing a statutory duty on regulators requiring them to have due regard to the principles'
-* 'we will not move to introduce such a statutory duty [on regulators] if our monitoring of the framework shows that implementation is effective without the need to legislate'
-* identified a number of central support functions, initially provided by government, necessary to implement the framework
-    * Monitoring and evaluation of the overall regulatory framework’s effectiveness and the implementation of the principles, including the extent to which implementation supports innovation. This will allow us to remain responsive and adapt the framework if necessary, including where it needs to be adapted to remain effective in the context of developments in AI’s capabilities and the state of the art.
-    * Assessing and monitoring risks across the economy arising from AI.
-    Conducting horizon scanning and gap analysis, including by convening industry, to inform a coherent response to emerging AI technology trends.
-    * Supporting testbeds and sandbox initiatives to help AI innovators get new technologies to market.
-    * Providing education and awareness to give clarity to businesses and empower citizens to make their voices heard as part of the ongoing iteration of the framework.
-    * Promoting interoperability with international regulatory frameworks.
-* 'During our call for views, industry, academia and civil society stressed that international alignment should support UK businesses to capitalise on global markets and protect UK citizens from cross-border harms.'
+# Concrete UK AI Policy as of 2nd April 2023
 
-From the meat of the paper:
-* 'The proposed regulatory framework does not seek to address all of the wider societal and global challenges that may relate to the development or use of AI. This includes issues relating to access to data, compute capability, and sustainability, as well as the balancing of the rights of content producers and AI developers.'
+The starting point for my overview of current UK policy is a whitepaper published a few days after the Pause letter. It was created by the Department for Science, Innovation, and Technology's (DSIT's) [Office for Artificial Intelligence](https://www.gov.uk/government/organisations/office-for-artificial-intelligence) and sets out how the Office, which is 'responsible for overseeing implementation of the National AI Strategy', intends to approach the cross-sectoral regulation of AI. 
+
+## The Office for Artificial Intelligence's Policy Whitepaper
+
+You can read the paper, _A Pro-innovation Approach to Regulating Artificial Intelligence_, [here](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach). My crude summary of it follows.
+
+Currently AI systems are regulated by sector-specific regulators. The Office for AI wants to keep it this way, but have provided a set of governance principles and will provide central support functions to these regulators specifically to help them govern AI systems. 
+
+Crucially, the Office for AI clarifies that regulators are not yet legally compelled to apply these principles or leverage these support functions in drafting new requirements and guidelines. However, the Office mentions that they will chase legal oomph if regulators don't apply the principles voluntarily. 
+
+The Office acknowledges that they need to gather evidence on what statutory interventions are preferable before making suggestions, and is strongly encouraging regulators to create requirements and guidance that are targeted at specific AI applications, as opposed to creating generic requirements for AI systems for an entire sector. 
+
+The Office proposes six central support functions (quoted verbatim):
+* Monitoring and evaluation of the overall regulatory framework’s effectiveness and the implementation of the principles, including the extent to which implementation supports innovation. This will allow us to remain responsive and adapt the framework if necessary, including where it needs to be adapted to remain effective in the context of developments in AI’s capabilities and the state of the art.
+* Assessing and monitoring risks across the economy arising from AI.
+* Conducting horizon scanning and gap analysis, including by convening industry, to inform a coherent response to emerging AI technology trends.
+* Supporting testbeds and sandbox initiatives to help AI innovators get new technologies to market.
+* Providing education and awareness to give clarity to businesses and empower citizens to make their voices heard as part of the ongoing iteration of the framework.
+* *Promoting interoperability with international regulatory frameworks.
+
+The Office for AI explicitly state that they will not be confronting the copyright dilemmas posed by Midjourney, Stability, Github Copilot and so on:
+> _The proposed regulatory framework does not seek to address all of the wider societal and global challenges that may relate to the development or use of AI. This includes issues relating to access to data, compute capability, and sustainability, as well as the balancing of the rights of content producers and AI developers._
+
 * [Section specifically on foundation models](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper#section333)
-* [Foundation Model Taskforce announced in the Integrated Review Refresh 2023](https://www.gov.uk/government/speeches/foreign-secretary-statement-to-parliament-on-the-integrated-review-refresh-2023) - this taskforce will be chaired by Matt Clifford from the newly created Advanced Research and Invention Agency
 
-* [£900mn on an exascale computer](https://www.gov.uk/government/speeches/spring-budget-2023-speech) following the 6th March [Independent Review of the Future of Compute](https://www.gov.uk/government/publications/future-of-compute-review)
-
-My brief summary: the Office for Artificial Intelligence has outlined a definition and some principles for AI systems that they want sector-specific regulators to assimilate and apply. The duty of regulators to comply with these principles is currently non-statutory, but the Office for AI will push for a statutory duty for regulators to comply if they feel the principles aren't being applied. The Office acknowledges that they need to gather evidence on what statutory interventions are preferable before making suggestions, and is strongly encouraging regulators to create requirements and guidance that are targeted at specific AI applications, as opposed to creating generic requirements for AI systems for an entire sector. In addition to the framework, the Office for AI is planning to introduce several central functions to support its implementation and evolution.
+The whitepaper also briefly mentions a Foundation Model Taskforce that will sit inside the Office for AI and will be directed by Matt Clifford from the Advanced Research and Innovation Agency.
 
 Central support functions roadmap will be published within the next six months, along with cross-sectoral guiding principles for regulators.
 
-12 months or more from now: first iteration of central functions, publish the first monitoring and evaluation report
+12 months or more from now: first iteration of central functions, publish the first monitoring and evaluation report, 
+
+
+## The National AI Strategy
+
+(National AI Strategy)[https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1020402/National_AI_Strategy_-_PDF_version.pdf] (first published September 2021, last updated December 2022).
+
+# The Putative Future of UK AI Policy
 
 Ironically, this could actually be a domain in which Brexit helps UK businesses: I fully expect the [EU's AI act](https://artificialintelligenceact.eu/) to be more risk-averse than the sum total of UK AI regulation. Large fines will be imposed on companies that fail to comply and innovation will be stifled. This will probably result in a similar outcome to what we've seen with the EU's GDPR versus the US's variegated data collection regulations: the EU will fall farther behind in the development of commercial AI applications, and the locus of control in the course of AI will shift further towards US companies (e.g. OpenAI almost certainly could not have trained a GPT-4-like model in the EU). 
 

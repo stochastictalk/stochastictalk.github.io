@@ -2,7 +2,7 @@
 title: "/stochastictalk/modality-overhang"
 post-title: "Modality Overhang"
 date: 2023-03-22
-categories: foundation models, GPT, agi
+categories: FOUNDATION AGI AI
 layout: post
 usemathjax: true
 permalink_name: modality-overhang
