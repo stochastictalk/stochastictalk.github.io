@@ -40,5 +40,23 @@ The response to the letter from people who disagree with The Pause is variously:
 * The existential and/or social and/or economic risks of AI are overstated and their time horizons are naively short.V
 * Realistically, it would require government intervention to enact, which is undesirable if you don't want the government doing that sort of thing as a matter of principle.
 
-UK AI policy at the minute and in the near future:
-*
+UK AI policy at the minute and in the near future (who, what they're doing):
+* 29th March policy whitepaper [A Pro-innovation Approach to AI Regulation](https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach)
+* associated [impact assessment](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1147045/uk_ai_regulation_impact_assessment.pdf)
+* [National AI strategy](https://www.gov.uk/government/publications/national-ai-strategy)
+* the Department for Science, Innovation and Technology's [Office for Artificial Intelligence](https://www.gov.uk/government/organisations/office-for-artificial-intelligence)
+* the Alan Turing Institute, particularly its [AI Standards Hub](https://aistandardshub.org/)
+
+Excerpts from the policy whitepaper:
+* 'AI technologies are currently regulated through a complex patchwork of legal requirements'
+* 'we will not put these principles on a statutory footing initially' 'principles will be issued on a non-statutory basis and implemented by existing regulators' 'we will... evaluate whether the non-statutory framework is having the desired effect'
+* 'Following this initial period of implementation, and when parliamentary time allows, we anticipate introducing a statutory duty on regulators requiring them to have due regard to the principles'
+* 'we will not move to introduce such a statutory duty [on regulators] if our monitoring of the framework shows that implementation is effective without the need to legislate'
+* identified a number of central support functions, initially provided by government, necessary to implement the framework
+    * Monitoring and evaluation of the overall regulatory framework’s effectiveness and the implementation of the principles, including the extent to which implementation supports innovation. This will allow us to remain responsive and adapt the framework if necessary, including where it needs to be adapted to remain effective in the context of developments in AI’s capabilities and the state of the art.
+    * Assessing and monitoring risks across the economy arising from AI.
+    Conducting horizon scanning and gap analysis, including by convening industry, to inform a coherent response to emerging AI technology trends.
+    * Supporting testbeds and sandbox initiatives to help AI innovators get new technologies to market.
+    * Providing education and awareness to give clarity to businesses and empower citizens to make their voices heard as part of the ongoing iteration of the framework.
+    * Promoting interoperability with international regulatory frameworks.
+* 'During our call for views, industry, academia and civil society stressed that international alignment should support UK businesses to capitalise on global markets and protect UK citizens from cross-border harms.'
