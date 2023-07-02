@@ -13,11 +13,11 @@ Midjourney, the San Francisco startup with broadly the best text-to-image models
 
 It's a wonderful magazine. Most pages contain one or two images, accompanied by the usernames of their progenitors and the prompts they used. It also contains an interview with a creative that has been using Midjourney.
 
-![A photograph of Midjourney magazine.](../assets/midjourney-magazine.webp)
+![A photograph of Midjourney magazine.](assets/midjourney-magazine.webp)
 
 I like art and enjoy the sorts of thoughts that it evokes, but I'm pretty ignorant of art history. This magazine signposted for me what artists consider worthy of depiction, and, better still, the words used to talk about different subject matter and styles. The prompts often spell out what I'm seeing. Here's an example: 
 
-![A photograph of Slimesunday's artwork in Midjourney magazine.](../assets/slimesunday.jpg)
+![A photograph of Slimesunday's artwork in Midjourney magazine.](assets/slimesunday.jpg)
 
 And [Slimesunday's](https://slimesunday.com/) prompt: `depicting an imaginative scene of a crowd of people swimming inside a giant woman's mouth, as if it were a swimming pool party, people navigating around teeth, tongue, and other oral structures, playfully interacting with the unusual envionment in the style of coby whitmore, arthur sarnoff, and norman rockwell, professional color grading, clean sharp focus, hyperrealism theme Image Prompts --ar 4:5 --iw 2`
 
