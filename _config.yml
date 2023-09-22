@@ -6,6 +6,7 @@ highlighter: rouge
 title: "/stochastictalk"
 url: https://stochastictalk.github.io
 baseurl: ""
+permalink: /:title:output_ext
 remote_theme: "tareqdandachi/jekyll-shell-theme"
 plugins:
 - jekyll-remote-theme 

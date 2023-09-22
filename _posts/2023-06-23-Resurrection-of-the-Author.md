@@ -13,13 +13,16 @@ Midjourney, the San Francisco startup with broadly the best text-to-image models
 
 It's a wonderful magazine. Most pages contain one or two images, accompanied by the usernames of their progenitors and the prompts they used. It also contains an interview with a creative that has been using Midjourney.
 
-![A photograph of Midjourney magazine.](assets/midjourney-magazine.webp)
+![A photograph of Midjourney magazine.](/assets/midjourney-magazine.webp){: width="100%" }
 
 I like art and enjoy the sorts of thoughts that it evokes, but I'm pretty ignorant of art history. This magazine signposted for me what artists consider worthy of depiction, and, better still, the words used to talk about different subject matter and styles. The prompts often spell out what I'm seeing. Here's an example: 
 
-![A photograph of Slimesunday's artwork in Midjourney magazine.](assets/slimesunday.jpg)
+![A photograph of Slimesunday's artwork in Midjourney magazine.](/assets/slimesunday.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="50%"}
 
-And [Slimesunday's](https://slimesunday.com/) prompt: `depicting an imaginative scene of a crowd of people swimming inside a giant woman's mouth, as if it were a swimming pool party, people navigating around teeth, tongue, and other oral structures, playfully interacting with the unusual envionment in the style of coby whitmore, arthur sarnoff, and norman rockwell, professional color grading, clean sharp focus, hyperrealism theme Image Prompts --ar 4:5 --iw 2`
+And [Slimesunday's](https://slimesunday.com/) prompt: 
+
+> `depicting an imaginative scene of a crowd of people swimming inside a giant woman's mouth, as if it were a swimming pool party, people navigating around teeth, tongue, and other oral structures, playfully interacting with the unusual envionment in the style of coby whitmore, arthur sarnoff, and norman rockwell, professional color grading, clean sharp focus, hyperrealism theme Image Prompts --ar 4:5 --iw 2`
+
 
 The prompt is displayed on the page opposite to the image, in crisp black sans serif font against a blank background, exactly as you'd find it in a museum label. Without the prompts, I would not have realised that this generation uses a colour palette likely to be found in an illustration or painting by Coby Whitmore or Norman Rockwell. Nor would I have known that its sharper detail is not found in paintings by those artists and is likely a consequence of being explicitly requested. I wouldn't even have known who Coby Whitmore was, or the connection between his career and the attributes of the woman with a mouth like a swimming pool.
 
