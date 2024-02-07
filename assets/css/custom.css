@@ -2,6 +2,14 @@
 
 body { font-family: Helvetica, sans-serif; margin: 0 auto; width: 90%; max-width: 700px; line-height: 1.5em; font-size: 1em; }
 
+/* IMAGE WRAPPING */
+.image-left {
+    display: block;
+    margin-left: 20px;
+    margin-right: auto;
+    float: right;
+}
+
 /* LISTS */
 :not(.menu) > ul { list-style: none; padding-left: 1em; }
 
