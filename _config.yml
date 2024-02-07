@@ -23,9 +23,6 @@ kramdown:
   syntax_highlighter: rouge
 header_pages:
   - index.md
-  - posts.md
-  - about.md
-  - ʇnoqɐ.md
 last-modified-at:
     date-format: '%y-%b-%d'
 toc:
