@@ -1,13 +1,12 @@
 :root { --main-color: black; --bg-color: white; --text-color: black; --pop-color: black; --alt-color: #2e73d5; --light-alt-color: #2e73d5; }
 
-body { font-family: Helvetica, sans-serif; margin: 0 auto; width: 90%; max-width: 700px; line-height: 1.5em; font-size: 1em; }
+body { font-family: Helvetica, sans-serif; margin: 0 auto; width: 90%; max-width: 800px; line-height: 1.5em; font-size: 1em; }
 
 /* IMAGE WRAPPING */
-.image-left {
+.splash {
     display: block;
-    margin-left: 20px;
-    margin-right: auto;
-    float: right;
+    margin: 20px;
+    max-width: 300px;
 }
 
 /* LISTS */
