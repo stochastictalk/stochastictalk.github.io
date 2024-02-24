@@ -1,31 +1,28 @@
-repository: stochastictalk/stochastictalk.github.io
-lsi: false
-safe: true
 source: .
-incremental: false
-highlighter: rouge
 title: "/stochastictalk"
 url: https://stochastictalk.github.io
+repository: stochastictalk/stochastictalk.github.io
+github_username: stochastictalk
 baseurl: ""
-permalink: /:title:output_ext
-remote_theme: "tareqdandachi/jekyll-shell-theme"
+header_pages:
+  - index.md
+  - posts.md
+
 plugins:
 - jekyll-remote-theme 
 - jemoji
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-last-modified-at
-gist:
-  noscript: false
-github_username: stochastictalk
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-header_pages:
-  - index.md
-last-modified-at:
-    date-format: '%y-%b-%d'
-toc:
-  enabled: true
-  start_level: 1
-  end_level: 4
+- jekyll-responsive-image
+- jekyll-youtube
+remote_theme: "tareqdandachi/jekyll-shell-theme"
+
+responsive_image:
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800
+base_path: assets
+
