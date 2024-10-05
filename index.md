@@ -5,12 +5,10 @@ permalink: /
 permalink_name: readme
 ---
 
-![Jerome laughing at a painting of a woman blowing her nose with a tissue.](/assets/me.jpg){: .splash width="100%"}
+![A blue picture.](/assets/blue.jpg){: .splash width="100%"}
 
- Hello! I'm Jerome. 
- 
- I work at the [Artificial Intelligence Safety Institute](https://www.gov.uk/government/organisations/ai-safety-institute/about) as a Research Strategy & Delivery Manager. Before I joined AISI, I worked as a data scientist for five years, most recently at [Faculty](https://faculty.ai/).
+ Hello! I'm Jerome. Welcome to my website. Take a look around. Enjoy yourself.
 
-The North Star for my work currently is [this clip](https://www.youtube.com/watch?v=XxbJw8PrIkc?t=220) of Steve Ballmer, but with the word "delivery" swapped in for "developers".
+ I currently work at the [Artificial Intelligence Safety Institute](aisi.gov.uk). I'm interested in how advanced AI systems can be made more secure against bad actors, and how people may be vulnerable to possible shocks associated with developments in AI. If you would like to talk to me about a shared interest in connection with my work at AISI, you can email me at `jerome.wynne(at)dsit.gov.uk`.
 
-I am always looking for collaborators for both energetic discussion and for joint projects. If you are in London and would like a coffee, you can say hello to me via [this form](https://forms.gle/Jq6BtDfECBdgDZ827). 
+Alongside my work at AISI, I like to write and make things. You can read things I've written under [/posts](posts.md). If there is a project you are working on that you'd like to talk about, or you'd like to talk about something I've done or am doing, you can email me at `jerome.wynne(at)proton.me`.
