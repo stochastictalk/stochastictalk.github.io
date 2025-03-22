@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "/jeromewynne/posts/effects-of-the-self.txt"
-name: "Effects Of The Self"
+name: "Effects of the Self"
 permalink: /jeromewynne/posts/effects-of-the-self
 ---
 <link href="/assets/css/post.css" rel="stylesheet">
