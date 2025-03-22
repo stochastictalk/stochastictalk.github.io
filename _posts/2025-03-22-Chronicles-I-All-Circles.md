@@ -19,6 +19,8 @@ Deep grooves make it easy to grip and hard to let go of.
 
 ## 1 All Circles
 
+&nbsp;
+
 I woke late at the Excalibur in room 270, floor 9. It was the first morning of my holiday. Thousands of duplicate rooms surrounded 270, all of them dingy, all of them starved of clues of the resort’s medieval theme. There were no suits of plate armour standing along the hallway, my bed was not framed with velvet drapes, and, to my disappointment, the staff at the front desk did not refer to my room as ‘your bedchamber’. 
 
 The Excalibur was medieval-themed in the same way that a pervert’s doglike if you put a lead on them: they’re more of a dog, but rescue shelters won’t take them and they’ll continue to get digestive issues if they eat kibble. Its unrendered bulk was two imposing two-thousand room blocs adorned with a few small turrets, with a cluster of cartoonish, colourful, and strictly noninteractive towers concentrated above its main entrance. 
