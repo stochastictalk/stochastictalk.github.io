@@ -9,6 +9,4 @@ group :jekyll_plugins do
   gem "jekyll-toc"
   gem "github-pages"
   gem "webrick"
-  gem "jekyll-responsive-image"
-  gem "jekyll-youtube"
 end
