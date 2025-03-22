@@ -5,11 +5,11 @@ name: "Retail Animism"
 permalink: /jeromewynne/posts/retail-animism
 ---
 <link href="/assets/css/post.css" rel="stylesheet">
+
 &nbsp;
 
 ## RETAIL ANIMISM
 
-&nbsp;
 &nbsp;
 
 Resting in the centre of the box is a single tab, about the size of a tiddlywink. You scan the QR code etched on its side with your phone. A video launches. A cartoon teapot appears. 
