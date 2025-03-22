@@ -7,7 +7,7 @@ permalink: /jeromewynne/posts/retail-animism
 <link href="/assets/css/post.css" rel="stylesheet">
 &nbsp;
 
-## Retail animism
+## RETAIL ANIMISM
 
 &nbsp;
 &nbsp;
