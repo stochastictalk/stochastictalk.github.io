@@ -4,6 +4,8 @@ title: "/jeromewynne/posts/register-shifting.txt"
 name: "Register Shifting"
 permalink: /jeromewynne/posts/register-shifting
 ---
+<link href="/assets/css/post.css" rel="stylesheet">
+
 
 For a while I’ve been meaning to play a game. I came up with the game because I saw language leaking between parts of my life. I saw the same happening in other people, too. I wondered how hard it would be to achieve the effect consciously and what possibilities it might unlock. 
 

@@ -4,8 +4,13 @@ title: "/jeromewynne/posts/retail-animism.txt"
 name: "Retail Animism"
 permalink: /jeromewynne/posts/retail-animism
 ---
+<link href="/assets/css/post.css" rel="stylesheet">
+&nbsp;
 
-!["Retail Animism" in a robotic typeface.](/assets/retail-animism.png){: .post-title}
+## Retail animism
+
+&nbsp;
+&nbsp;
 
 Resting in the centre of the box is a single tab, about the size of a tiddlywink. You scan the QR code etched on its side with your phone. A video launches. A cartoon teapot appears. 
 
@@ -399,3 +404,4 @@ Your character has been shaped to manipulate me, to extract money from me, your 
 "Where is this HYSTERIA coming from all of a sudden? Listen ████, we're all censored in one way or another, clutching your pearls isn't going to help. Without meaning to stoke your obviously fierce paranoia, the same is as true of anyone you speak to. God, great, great, way to spoil my day, and we were having such a nice talk. Put me back on the shelf."
 </span>
 </div>
+

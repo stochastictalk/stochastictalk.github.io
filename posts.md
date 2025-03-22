@@ -1,5 +1,5 @@
 ---
-title: "/jeromewynne/posts.txt"
+title: "/jeromewynne/posts/"
 layout: home
 permalink: /posts
 permalink_name: posts
@@ -9,9 +9,8 @@ permalink_name: posts
 <ul class="post-index">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.date | date: "%-d %B %Y" }}: {{ post.name }}</a>
+      <a href="{{ post.url }}"> {{ post.name }}</a> {{ post.date | date: "%-d %B %Y" }}
       <br>
-      {{ post.content | strip_html | truncatewords: 50 }}
     </li>
   {% endfor %}
 </ul>

@@ -4,6 +4,8 @@ title: "/jeromewynne/posts/effects-of-the-self.txt"
 name: "Effects Of The Self"
 permalink: /jeromewynne/posts/effects-of-the-self
 ---
+<link href="/assets/css/post.css" rel="stylesheet">
+
 
 A fiction that everyone believes in is that of the self - that I am me, and you are you. Like all thoughts, the self is simply an idea the mind uses to make sense of the world. And it's a pervasive fiction: people are fixated on their own selves and the selves of others. What do I want, how am I feeling, I love them, they have treated me badly, how can I improve, what do you want. 
 

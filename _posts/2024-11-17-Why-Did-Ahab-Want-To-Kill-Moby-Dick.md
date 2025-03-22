@@ -4,6 +4,13 @@ title: "/jeromewynne/posts/ahab.txt"
 name: "Why Did Ahab Want to Kill Moby Dick?"
 permalink: /jeromewynne/posts/why-did-ahab-want-to-kill-moby-dick
 ---
+<link href="/assets/css/post.css" rel="stylesheet">
+
+&nbsp;
+
+## Why did Ahab want to kill Moby Dick?
+
+&nbsp;
 
 Why did Ahab want to kill Moby Dick? Because Moby Dick took his leg, because the ivory replacement clattered on the foredeck of the Pequod at night and prompted second mate Stubb to whinge, and because the foul mood that clings to chronic amputative pain causes a sea-captain to fester to a murderous boil. Were the truth of any of these facts different, Ahab might not have wanted to kill Moby Dick. But being true as they were and are, Ahab did want to kill Moby Dick.
 
