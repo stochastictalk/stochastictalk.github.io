@@ -1,9 +1,9 @@
 body > p, h1, h2, h3 { font-family: "Noto Serif JP" }
 
 h1 {
-    font-size: min(10vw, 6em);
+    font-size:3em;
 }
 
 h2 {
-    font-size: min(4vw, 2em);
+    font-size: 1.5em;
 }
