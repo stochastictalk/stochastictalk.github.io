@@ -1,6 +1,6 @@
 function setup() {
     var canvas = createCanvas(400, 400, WEBGL);
-    canvas.parent("sketch")
+    canvas.parent("sketch");
     angleMode(DEGREES);
     strokeWeight(.2);
     fill("white");
