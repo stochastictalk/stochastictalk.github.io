@@ -1,6 +1,6 @@
 let c = 0;
-let c_w = 400;
-let c_h = 400;
+let c_w = window.innerWidth;
+let c_h = 0.7*window.innerHeight;
 let img_h = 30;
 let img_w = Math.floor(2.21*img_h);
 let x = c_w/2;
@@ -32,7 +32,8 @@ function setup() {
     for (j in imgs) {
         toggleImageColor(imgs[j]);
     }
-    strokeWeight(0.5);
+    strokeWeight(1);
+    colorMode(HSB);
 };
 
 function getRandomInt(max) {
@@ -69,7 +70,6 @@ function draw() {
     background("white");
     frameRate(60);
 
-    console.log(mouseHistory[mouseHistory.length-1]);
     mouseHistory.shift();
     if (mouseIsPressed) {
         mouseHistory.push([mouseX, mouseY]);
@@ -112,7 +112,7 @@ function draw() {
     }
 
     for (let i=0; i < mouseHistory.length - 1; i++ ) {
-        stroke(0, 0, 0, 255*i/mouseHistory.length);
+        stroke((mouseX-mouseY), 90, 90, i/mouseHistory.length);
         line(mouseHistory[i][0], mouseHistory[i][1], mouseHistory[i+1][0], mouseHistory[i+1][1]);
     }
 

@@ -2,6 +2,10 @@ canvas {
     display: block;
 }
 
+html, body {
+    overscroll-behavior: contain;
+}
+
 #sketch {
     height: 100%;
     margin: 0;
