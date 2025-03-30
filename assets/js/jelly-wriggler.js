@@ -61,7 +61,7 @@ function setup() {
 }
 
 function draw() {
-    if (!mouseIsPressed) {
+    if (mouseIsPressed) {
         background("black"); // Draw over the last frame
         stroke("white");
         fill("black");
