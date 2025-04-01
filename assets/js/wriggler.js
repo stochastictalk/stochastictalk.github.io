@@ -3,7 +3,7 @@ let c_h = 400;
 let mvmt;
 let pressedKeys = {};
 let OFFSET = 10000;
-let NOISE_SCALE = 0.005;
+let NOISE_SCALE = 0.0025;
 let n_links = 50;
 let LINK_LENGTH = 1;
 let points;
