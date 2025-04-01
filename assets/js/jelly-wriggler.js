@@ -8,11 +8,11 @@ let k = 1.;
 let m = 1.;
 let dt = 1;
 let l = 1;
-let PERLIN_SCALE = 0.01;
+let PERLIN_SCALE = 0.005;
 let PERLIN_OFFSET = 10000;
-let SPEED = 10;
+let SPEED = 20;
 let GLOBAL_SPEED_DECAY = 0.5;
-let r = 5;
+let r = 10;
 
 class Worm {
     constructor(n, k, m, dt, l) {
@@ -29,8 +29,8 @@ class Worm {
     update() {
         // Motor force from random noise - changes velocity
         let motor_v = createVector(0, 0);
-        this.v[0].x = SPEED*(noise(PERLIN_SCALE*this.x[0].x, PERLIN_SCALE*this.x[0].y, PERLIN_SCALE*frameCount*dt) - 0.5)/dt;
-        this.v[0].y = SPEED*(noise(PERLIN_SCALE*this.x[0].x + PERLIN_OFFSET, PERLIN_SCALE*this.x[0].y + PERLIN_OFFSET, PERLIN_SCALE*frameCount*dt) - 0.5)/dt;
+        this.v[0].x = 0.5*this.v[0].x + 0.5*SPEED*(noise(PERLIN_SCALE*this.x[0].x, PERLIN_SCALE*this.x[0].y, PERLIN_SCALE*frameCount*dt) - 0.5)/dt;
+        this.v[0].y = 0.5*this.v[0].y + 0.5*SPEED*(noise(PERLIN_SCALE*this.x[0].x + PERLIN_OFFSET, PERLIN_SCALE*this.x[0].y + PERLIN_OFFSET, PERLIN_SCALE*frameCount*dt) - 0.5)/dt;
 
         for (let j = 0; j <  this.n; j++) { // Compute the forces on each particle
             let f1 = createVector(0, 0);
@@ -56,20 +56,15 @@ class Worm {
 function setup() {
     canvas = createCanvas(c_w, c_h);
     canvas.parent("sketch");
-    strokeWeight(.5);
+    strokeWeight(r);
     worm = new Worm(n, k, m, dt, l);
 }
 
 function draw() {
-    if (mouseIsPressed) {
-        background("black"); // Draw over the last frame
-        stroke("white");
-        fill("black");
-    } else {
-        background("white"); // Draw over the last frame
-        stroke("black");
-        fill("white");
-    }
+    
+    background("white"); // Draw over the last frame
+    fill("black");
+
     // Update the particle positions and velocities
     worm.update();
 
@@ -84,6 +79,6 @@ function draw() {
         if (y < 0) {
             y = c_h + y;
         }
-        circle(x, y, r);
+        point(x, y);
     };
 }
