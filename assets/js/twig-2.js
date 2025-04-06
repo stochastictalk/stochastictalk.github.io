@@ -5,8 +5,8 @@ let L = 1; // Scale
 let sw = .5; // Stroke weight
 let fr = 30; // Frame rate
 let max_n_cells = 1000;
-let APEX_AUXIN_CONCENTRATION = 1;
-let SLEEPER_AUXIN_CONCENTRATION = 0.5;
+let APEX_AUXIN_VOLUME = 1.;
+let SLEEPER_AUXIN_VOLUME = 0.5;
 let AUXIN_DECAY_FACTOR = 0.01; // Rate at which auxin tails to zero, linear decay
 
 // Three cell types:
@@ -67,6 +67,11 @@ class Tree {
         // All the growth steps - replication, specialisation, budding, and angling - depend on auxin concentration.
         // So we broadcast the auxin concentration from the stem tips and leaves, then run the individual grow steps.
 
+        // Clear the cell auxin concentrations 
+        for (const cell of this.cells(ALL_CELL_TYPES)) {
+            cell.clear(); // Clear cell auxin volume
+        }
+
         // Update auxin concentrations
         for (const cell of this.cells([CellType.APEX, CellType.SLEEPER])) {
             cell.broadcast(); // Transmits its auxin concentration up to n steps in all directions
@@ -91,6 +96,7 @@ class Tree {
             }
             cell.x_e = cell.x_o + Math.sin(cell.th);
             cell.y_e = cell.y_o + Math.cos(cell.th);
+            stroke(0, 255*Math.min(cell.a, 1.), 0); // Colour with auxin concentration so tracking growth is easier
             line(o_x + L*cell.x_o, c_h - L*cell.y_o - o_y, o_x + L*cell.x_e, c_h - L*cell.y_e - o_y);
         }
     }
@@ -102,9 +108,13 @@ class Cell {
         this.th = th; // global orientation relative to vertical, positive clockwise
         this.p = p; // parent cell
         this.c = []; // list of children cells
-        this.a = 0; // auxin concentration 
+        this.a = 0.; // auxin concentration 
         this.age = 0; // age
         this.type = CellType.APEX // _always_ an apex cell on construction
+    }
+
+    clear() {
+        this.a = 0.;
     }
 
     get replicate_probability() {
@@ -127,7 +137,6 @@ class Cell {
         return 0.
     }
 
-
     // Apex methods
     replicate() { // if apex type, may extend existing branch
         if ((Math.random() <= this.replicate_probability) && (this.type == CellType.APEX)) {
@@ -144,24 +153,39 @@ class Cell {
         }
     }
 
-    broadcast() { // if apex type or sleeper type, broadcasts auxin source value to neighbours
-        // Initialize an auxin budget
-        // Visit cells in order of distance
-        // Dispense it until it's depleted
+    _broadcast(cell, source_auxin_volume, distance, visited_cells) {
+        // Increments the auxin concentration of the cell, 
+        // then increments concentration of unvisited parents and children.
+        let auxin_increment = source_auxin_volume - distance*AUXIN_DECAY_FACTOR;
 
+        if (auxin_increment <= 0) {
+            return 
+        } else if (visited_cells.has(cell)) {
+            return
+        } else {
+            cell.a += auxin_increment;
+            visited_cells.add(cell);
+            if (cell.p != null) { 
+                this._broadcast(cell.p, source_auxin_volume, distance + 1, visited_cells);
+            }
+            for (const child_cell of cell.c) {
+                this._broadcast(child_cell, source_auxin_volume, distance + 1, visited_cells);
+            }
+        }
+    }
+
+    broadcast() { // If apex type or sleeper type, broadcasts auxin source value to neighbours
+        
+        let source_auxin_volume; 
         if (this.type == CellType.APEX) {
-            let auxin_conc = APEX_AUXIN_CONCENTRATION;
-
-            // Maintain a list of visited cells
-            // At each step, get the parents and children of the cell, increment the distance by one
-            // For each one not already visited, visit - update its auxin concentration
-            
+            source_auxin_volume = APEX_AUXIN_VOLUME;
+        } else if (this.type == CellType.SLEEPER) {
+            source_auxin_volume = SLEEPER_AUXIN_VOLUME;
+        } else {
+            return
         }
         
-        if (this.type == CellType.SLEEPER) {
-            let auxin_budget = SLEEPER_AUXIN_BUDGET;
-            console.log("Sleepers broadcast auxin.");
-        }
+        this._broadcast(this, source_auxin_volume, 0., new Set([]));
     }
 
     // Sleeper methods
@@ -185,7 +209,6 @@ function setup() {
     canvas.parent("sketch");
     tree = new Tree();
     frameRate(fr);
-    stroke("black");
     strokeWeight(sw);
 };
 
