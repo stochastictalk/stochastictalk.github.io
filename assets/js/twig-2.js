@@ -1,13 +1,16 @@
 let c_w = 400;
-let c_h = 400;
+let c_h = 600;
 let canvas;
 let L = 1; // Scale
 let sw = .5; // Stroke weight
 let fr = 30; // Frame rate
-let max_n_cells = 1000;
+let max_n_cells = 5000;
 let APEX_AUXIN_VOLUME = 1.;
 let SLEEPER_AUXIN_VOLUME = 0.5;
 let AUXIN_DECAY_FACTOR = 0.01; // Rate at which auxin tails to zero, linear decay
+let SLEEPER_PROBABILITY = .01; // Probability an apex specialises to a sleeper
+let GRAVITROPISM_SF = .005;
+let MAX_BUD_AGE = 200;
 
 // Three cell types:
 // * Apexes
@@ -79,11 +82,11 @@ class Tree {
 
         // Grow
         for (const cell of this.cells(ALL_CELL_TYPES)) {
-            this.age += 1;
+            cell.age += 1.;
             cell.replicate(); // Branch apex cells replicate
             cell.specialise(); // Apex cells specialise
             cell.bud(); // Sleepers may bud to new branches
-            cell.orient(); // Anglers and sleeper orient themselves w.r.t. gravity
+            cell.orient(); // Anglers and sleepers orient themselves w.r.t. gravity
         }
     }
 
@@ -96,7 +99,12 @@ class Tree {
             }
             cell.x_e = cell.x_o + Math.sin(cell.th);
             cell.y_e = cell.y_o + Math.cos(cell.th);
-            stroke(0, 255*Math.min(cell.a, 1.), 0); // Colour with auxin concentration so tracking growth is easier
+            if (cell.type == CellType.SLEEPER) {
+                stroke(255, 0, 0);
+            } else {
+                stroke(0, 255*Math.min(cell.a, 1.), 0); // Colour with auxin concentration so tracking growth is easier
+            }
+            strokeWeight(L*Math.log(cell.age));
             line(o_x + L*cell.x_o, c_h - L*cell.y_o - o_y, o_x + L*cell.x_e, c_h - L*cell.y_e - o_y);
         }
     }
@@ -109,7 +117,7 @@ class Cell {
         this.p = p; // parent cell
         this.c = []; // list of children cells
         this.a = 0.; // auxin concentration 
-        this.age = 0; // age
+        this.age = 0.; // age
         this.type = CellType.APEX // _always_ an apex cell on construction
     }
 
@@ -122,19 +130,23 @@ class Cell {
     }
 
     get bud_probability() {
-        return 1.; // TODO: should be a function of auxin concentration!
+        return (1. - this.a); // TODO: should be a function of auxin concentration!
     };
 
     get sleeper_probability() { // Probability of an apex specialising to a sleeper (i.e. a leaf)
-        return 0.01; // TODO: should be a function of auxin concentration!
+        return SLEEPER_PROBABILITY;
     };
 
     get bud_angle() {
-        return Math.sign(Math.random()-0.5)*Math.PI/8;
+        return Math.sign(Math.random()-0.5)*Math.PI/4;
     }
 
-    get gravitropism_angle() { // returns angle based on auxin concentration, cell orientation, and direction of gravity
-        return 0.
+    get gravitropism_angle() { // returns angle delta based on auxin concentration, cell orientation, and direction of gravity
+        // Branch angle is angle relative to vertical, measured clockwise
+        // subtract if less than pi, add if more than pi
+        let sign = -Math.sign(Math.PI - this.th);
+        let mag = GRAVITROPISM_SF*this.a*(this.th % 2*Math.PI)/Math.PI // Diminishes as th approaches 0 or 2pi
+        return sign*mag;
     }
 
     // Apex methods
@@ -146,10 +158,12 @@ class Cell {
     }
 
     specialise() { // if apex type, specialises to a sleeper or an angler
-        if ((Math.random() <= this.sleeper_probability) && (this.type == CellType.APEX)) {
-            this.type = CellType.SLEEPER;
-        } else {
-            this.type = CellType.ANGLER;
+        if (this.type == CellType.APEX) {
+            if (Math.random() <= this.sleeper_probability) {
+                this.type = CellType.SLEEPER;
+            } else {
+                this.type = CellType.ANGLER;
+            }
         }
     }
 
@@ -163,7 +177,7 @@ class Cell {
         } else if (visited_cells.has(cell)) {
             return
         } else {
-            cell.a += auxin_increment;
+            cell.a = Math.min(cell.a + auxin_increment, 1.);
             visited_cells.add(cell);
             if (cell.p != null) { 
                 this._broadcast(cell.p, source_auxin_volume, distance + 1, visited_cells);
@@ -190,7 +204,7 @@ class Cell {
 
     // Sleeper methods
     bud() { // if sleeper type, may form a new branch and turn into an angler
-        if ((Math.random() <= this.bud_probability) && (this.type == CellType.SLEEPER)) {
+        if ((Math.random() <= this.bud_probability) && (this.type == CellType.SLEEPER) && (this.age < MAX_BUD_AGE)) {
             this.type = CellType.ANGLER;
             let c = new Cell(this.th + this.bud_angle, this);
             this.c.push(c);
