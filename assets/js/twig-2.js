@@ -2,8 +2,12 @@ let c_w = 400;
 let c_h = 400;
 let canvas;
 let L = 1; // Scale
-let sw = 1; // Stroke weight
-let fr = 2; // Frame rate
+let sw = .5; // Stroke weight
+let fr = 30; // Frame rate
+let max_n_cells = 1000;
+let APEX_AUXIN_CONCENTRATION = 1;
+let SLEEPER_AUXIN_CONCENTRATION = 0.5;
+let AUXIN_DECAY_FACTOR = 0.01; // Rate at which auxin tails to zero, linear decay
 
 // Three cell types:
 // * Apexes
@@ -112,7 +116,7 @@ class Cell {
     };
 
     get sleeper_probability() { // Probability of an apex specialising to a sleeper (i.e. a leaf)
-        return 0.05; // TODO: should be a function of auxin concentration!
+        return 0.01; // TODO: should be a function of auxin concentration!
     };
 
     get bud_angle() {
@@ -141,11 +145,21 @@ class Cell {
     }
 
     broadcast() { // if apex type or sleeper type, broadcasts auxin source value to neighbours
+        // Initialize an auxin budget
+        // Visit cells in order of distance
+        // Dispense it until it's depleted
+
         if (this.type == CellType.APEX) {
-            console.log("Apexes broadcast auxin.");
+            let auxin_conc = APEX_AUXIN_CONCENTRATION;
+
+            // Maintain a list of visited cells
+            // At each step, get the parents and children of the cell, increment the distance by one
+            // For each one not already visited, visit - update its auxin concentration
+            
         }
         
         if (this.type == CellType.SLEEPER) {
+            let auxin_budget = SLEEPER_AUXIN_BUDGET;
             console.log("Sleepers broadcast auxin.");
         }
     }
@@ -176,8 +190,9 @@ function setup() {
 };
 
 function draw() {
-    background("white");
-    tree.update();
-    tree.draw(c_w/2, 0, L);
-    console.log(tree.cells(ALL_CELL_TYPES).length);
+    if (tree.cells(ALL_CELL_TYPES).length < max_n_cells) {
+        background("white");
+        tree.update();
+        tree.draw(c_w/2, 0, L);
+    }
 }
