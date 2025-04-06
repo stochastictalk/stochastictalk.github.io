@@ -1,16 +1,16 @@
-let c_w = 400;
+let c_w = 600;
 let c_h = 600;
 let canvas;
-let L = 1; // Scale
+let L = .5; // Scale
 let sw = .5; // Stroke weight
-let fr = 30; // Frame rate
+let fr = 60; // Frame rate
 let max_n_cells = 5000;
 let APEX_AUXIN_VOLUME = 1.;
-let SLEEPER_AUXIN_VOLUME = 0.5;
-let AUXIN_DECAY_FACTOR = 0.01; // Rate at which auxin tails to zero, linear decay
+let SLEEPER_AUXIN_VOLUME = 0.;
+let AUXIN_DECAY_FACTOR = 0.005; // Rate at which auxin tails to zero, linear decay
 let SLEEPER_PROBABILITY = .01; // Probability an apex specialises to a sleeper
 let GRAVITROPISM_SF = .005;
-let MAX_BUD_AGE = 200;
+let MAX_BUD_AGE = 50;
 
 // Three cell types:
 // * Apexes
@@ -104,7 +104,7 @@ class Tree {
             } else {
                 stroke(0, 255*Math.min(cell.a, 1.), 0); // Colour with auxin concentration so tracking growth is easier
             }
-            strokeWeight(L*Math.log(cell.age));
+            strokeWeight(L*(cell.age/100)**1.6);
             line(o_x + L*cell.x_o, c_h - L*cell.y_o - o_y, o_x + L*cell.x_e, c_h - L*cell.y_e - o_y);
         }
     }
@@ -138,7 +138,7 @@ class Cell {
     };
 
     get bud_angle() {
-        return Math.sign(Math.random()-0.5)*Math.PI/4;
+        return Math.sign(Math.random()-0.5)*(Math.PI/4 + Math.random() - 0.5);
     }
 
     get gravitropism_angle() { // returns angle delta based on auxin concentration, cell orientation, and direction of gravity
@@ -229,7 +229,9 @@ function setup() {
 function draw() {
     if (tree.cells(ALL_CELL_TYPES).length < max_n_cells) {
         background("white");
+        fill("black");
+        rect(0, c_h - 100, c_w, 100);
         tree.update();
-        tree.draw(c_w/2, 0, L);
+        tree.draw(c_w/2, 100, L);
     }
 }
