@@ -4,11 +4,11 @@ let canvas;
 let L = .5; // Scale
 let sw = .5; // Stroke weight
 let fr = 60; // Frame rate
-let max_n_cells = 5000;
+let max_n_cells = 50000;
 let APEX_AUXIN_VOLUME = 1.;
 let SLEEPER_AUXIN_VOLUME = 0.;
 let AUXIN_DECAY_FACTOR = 0.005; // Rate at which auxin tails to zero, linear decay
-let SLEEPER_PROBABILITY = .01; // Probability an apex specialises to a sleeper
+let SLEEPER_PROBABILITY = .02; // Probability an apex specialises to a sleeper
 let GRAVITROPISM_SF = 2e-5;
 let MAX_BUD_AGE = 50;
 
@@ -26,6 +26,17 @@ let MAX_BUD_AGE = 50;
 // For anglers, we:
 // * Update its angle based on its auxin gradient, which is figured out from its orientation, the auxin concentration, and the direction of gravity
 // Apexes, anglers, and sleepers are all types of cell. Sleepers are a specialist type of angler.
+
+// Possible things to incorporate next:
+// * Gravity
+// * Light
+// * Small branches
+// * Leaves
+// * Flowers 
+// * Roots
+// Each segment behaves like a spring
+// Stiffness and mass can vary with the branch's girth
+// At each time step, need to 
 
 // Later can incorporate light exposure, and adjust the sleeper and apex probabilities
 
@@ -108,9 +119,9 @@ class Tree {
         // We draw the tree by figuring out the position of all the branches from the position of the stem cell
         for (const cell of this.cells(ALL_CELL_TYPES)) {
             if (cell.type == CellType.SLEEPER) {
-                stroke(255, 0, 0);
+                //stroke(255, 0, 0);
             } else {
-                stroke(0, 255*Math.min(cell.a, 1.), 0); // Colour with auxin concentration so tracking growth is easier
+                //stroke(0, 255*Math.min(cell.a, 1.), 0); // Colour with auxin concentration so tracking growth is easier
             }
             strokeWeight(L*(cell.age/100)**1.6);
             line(o_x + L*cell.x_o, c_h - L*cell.y_o - o_y, o_x + L*cell.x_e, c_h - L*cell.y_e - o_y);
