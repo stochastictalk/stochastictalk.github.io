@@ -9,7 +9,7 @@ let APEX_AUXIN_VOLUME = 1.;
 let SLEEPER_AUXIN_VOLUME = 0.;
 let AUXIN_DECAY_FACTOR = 0.005; // Rate at which auxin tails to zero, linear decay
 let SLEEPER_PROBABILITY = .01; // Probability an apex specialises to a sleeper
-let GRAVITROPISM_SF = .005;
+let GRAVITROPISM_SF = 2e-5;
 let MAX_BUD_AGE = 50;
 
 // Three cell types:
@@ -80,6 +80,20 @@ class Tree {
             cell.broadcast(); // Transmits its auxin concentration up to n steps in all directions
         }
 
+        // Compute locations and orientations of cells
+        for (const cell of this.cells(ALL_CELL_TYPES)) {
+            if (!(cell.p == null)) { // If not stem cell
+                cell.x_o = cell.p.x_e;
+                cell.y_o = cell.p.y_e;
+                cell.g_th = (cell.p.g_th + cell.th);
+            }
+            else {
+                cell.g_th = cell.th;
+            }
+            cell.x_e = cell.x_o + Math.sin(cell.g_th);
+            cell.y_e = cell.y_o + Math.cos(cell.g_th); 
+        }
+
         // Grow
         for (const cell of this.cells(ALL_CELL_TYPES)) {
             cell.age += 1.;
@@ -93,12 +107,6 @@ class Tree {
     draw(o_x, o_y, L) {
         // We draw the tree by figuring out the position of all the branches from the position of the stem cell
         for (const cell of this.cells(ALL_CELL_TYPES)) {
-            if (!(cell.p == null)) {
-                cell.x_o = cell.p.x_e;
-                cell.y_o = cell.p.y_e;
-            }
-            cell.x_e = cell.x_o + Math.sin(cell.th);
-            cell.y_e = cell.y_o + Math.cos(cell.th);
             if (cell.type == CellType.SLEEPER) {
                 stroke(255, 0, 0);
             } else {
@@ -113,12 +121,19 @@ class Tree {
 class Cell {
 
     constructor(th=0., p) {
-        this.th = th; // global orientation relative to vertical, positive clockwise
+        this.th = th; // orientation relative to parent if it has one or global vertical if not, positive clockwise
         this.p = p; // parent cell
         this.c = []; // list of children cells
         this.a = 0.; // auxin concentration 
         this.age = 0.; // age
         this.type = CellType.APEX // _always_ an apex cell on construction
+
+        // Global coordinates
+        this.g_th = null;
+        this.x_o = null;
+        this.y_o = null;
+        this.x_e = null;
+        this.y_e = null;
     }
 
     clear() {
@@ -144,15 +159,15 @@ class Cell {
     get gravitropism_angle() { // returns angle delta based on auxin concentration, cell orientation, and direction of gravity
         // Branch angle is angle relative to vertical, measured clockwise
         // subtract if less than pi, add if more than pi
-        let sign = -Math.sign(Math.PI - this.th);
-        let mag = GRAVITROPISM_SF*this.a*(this.th % 2*Math.PI)/Math.PI // Diminishes as th approaches 0 or 2pi
+        let sign = -Math.sign(Math.PI - this.g_th);
+        let mag = GRAVITROPISM_SF*this.a*(this.g_th % 2*Math.PI)/Math.PI // Diminishes as th approaches 0 or 2pi
         return sign*mag;
     }
 
     // Apex methods
     replicate() { // if apex type, may extend existing branch
         if ((Math.random() <= this.replicate_probability) && (this.type == CellType.APEX)) {
-            let c = new Cell(this.th, this);
+            let c = new Cell(0., this);
             this.c.push(c);
         }
     }
@@ -206,7 +221,7 @@ class Cell {
     bud() { // if sleeper type, may form a new branch and turn into an angler
         if ((Math.random() <= this.bud_probability) && (this.type == CellType.SLEEPER) && (this.age < MAX_BUD_AGE)) {
             this.type = CellType.ANGLER;
-            let c = new Cell(this.th + this.bud_angle, this);
+            let c = new Cell(this.bud_angle, this);
             this.c.push(c);
         }
     }
