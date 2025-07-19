@@ -401,8 +401,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-coz-presented-our-work-on-transcript-analysis-to-the-technical-ai-governance-workshop-at-icml-in-his-talk-transcript-analysis-and-how-it-relates-to-technical-governance",
+          title: 'Coz presented our work on transcript analysis to the Technical AI Governance workshop...',
           description: "",
           section: "News",},{
         id: 'social-email',
