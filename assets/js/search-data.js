@@ -393,8 +393,8 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+      },{id: "news-i-ve-joined-the-frontier-ai-taskforce-as-research-strategy-and-delivery-manager-for-its-safeguards-analysis-team",
+          title: 'I’ve joined the Frontier AI Taskforce as Research Strategy and Delivery Manager for...',
           description: "",
           section: "News",},{id: "news-i-ve-joined-aisi-s-science-of-evaluations-team-i-ll-be-working-on-tools-and-methods-for-analysing-llm-transcripts-for-aisi-to-use-in-our-pre-deployment-testing-exercises",
           title: 'I’ve joined AISI’s Science of Evaluations team! I’ll be working on tools and...',
