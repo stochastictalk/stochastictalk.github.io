@@ -396,12 +396,10 @@ ninja.data = [{
       },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-ve-joined-aisi-s-science-of-evaluations-team-i-ll-be-working-on-tools-and-methods-for-analysing-llm-transcripts-for-aisi-to-use-in-our-pre-deployment-testing-exercises",
+          title: 'I’ve joined AISI’s Science of Evaluations team! I’ll be working on tools and...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-coz-presented-our-work-on-transcript-analysis-to-the-technical-ai-governance-workshop-at-icml-in-his-talk-transcript-analysis-and-how-it-relates-to-technical-governance",
+          section: "News",},{id: "news-coz-presented-our-work-on-transcript-analysis-to-the-technical-ai-governance-workshop-at-icml-in-his-talk-transcript-analysis-and-how-it-relates-to-technical-governance",
           title: 'Coz presented our work on transcript analysis to the Technical AI Governance workshop...',
           description: "",
           section: "News",},{
