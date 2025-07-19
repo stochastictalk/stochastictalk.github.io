@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://stochastictalk.github.io/al-folio/sitemap.xml
+Sitemap: https://stochastictalk.github.io/sitemap.xml
