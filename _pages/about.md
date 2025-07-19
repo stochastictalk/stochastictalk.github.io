@@ -24,4 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Currently working on enhancing large language model evaluations in the Science of Evaluations group at the [UK AI Security Institute](https://www.aisi.gov.uk/). Previously at [Faculty](https://faculty.ai/).
+I'm currently working on enhancing large language model evaluations as a research engineer in the Science of Evaluations group at the [UK AI Security Institute](https://www.aisi.gov.uk/). I previously worked at [Faculty](https://faculty.ai/) as a data scientist.
+
+I did a year on a PhD in statistics at Imperial College London, which is also where I studied for my MSc in statistics. My undergraduate degree was in [design engineering](https://www.bristol.ac.uk/study/undergraduate/2025/design-engineering/meng-design-engineering/) with electives in maths and computer science.
