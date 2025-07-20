@@ -30,26 +30,158 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-",
         
-          title: "a post with plotly.js",
+          title: "",
         
-        description: "this is what included plotly.js code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/plotly/";
+            window.location.href = "/blog/2025/2025-03-22-Chronicles-I-All-Circles/";
           
         },
-      },{id: "post-a-post-with-image-galleries",
+      },{id: "post-twig-ii-js",
         
-          title: "a post with image galleries",
+          title: "twig-ii.js",
         
-        description: "this is what included image galleries could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/photo-gallery/";
+            window.location.href = "/blog/2025/twig-2/";
+          
+        },
+      },{id: "post-twig-js",
+        
+          title: "twig.js",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/twig/";
+          
+        },
+      },{id: "post-jelly-wriggler-js",
+        
+          title: "jelly-wriggler.js",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/jelly-wriggler/";
+          
+        },
+      },{id: "post-wriggler-js",
+        
+          title: "wriggler.js",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/wriggler/";
+          
+        },
+      },{id: "post-dvd-js",
+        
+          title: "dvd.js",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/dvd/";
+          
+        },
+      },{id: "post-js",
+        
+          title: "⧉.js",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/";
+          
+        },
+      },{id: "post-why-did-ahab-want-to-kill-moby-dick",
+        
+          title: "Why did Ahab want to kill Moby Dick?",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/Why-Did-Ahab-Want-To-Kill-Moby-Dick/";
+          
+        },
+      },{id: "post-wake",
+        
+          title: "Wake",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/Wake/";
+          
+        },
+      },{id: "post-the-teapot",
+        
+          title: "The teapot",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/Teapot/";
+          
+        },
+      },{id: "post-register-shifting",
+        
+          title: "Register Shifting",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/Register-Shifting/";
+          
+        },
+      },{id: "post-consumed",
+        
+          title: "Consumed",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/Consumed/";
+          
+        },
+      },{id: "post-effects-of-the-self",
+        
+          title: "Effects of the Self",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/The-Effects-Of-The-Self/";
+          
+        },
+      },{id: "post-frontier-ai-bulletin-13-05-24-to-26-05-24",
+        
+          title: "Frontier AI bulletin - 13/05/24 to 26/05/24",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
       },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
@@ -63,224 +195,92 @@ ninja.data = [{
             window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
-      },{id: "post-a-post-with-tabs",
+      },{id: "post-frontier-ai-bulletin-22-04-24-to-12-05-24",
         
-          title: "a post with tabs",
+          title: "Frontier AI bulletin - 22/04/24 to 12/05/24",
         
-        description: "this is what included tabs in a post could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/tabs/";
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
-      },{id: "post-a-post-with-typograms",
+      },{id: "post-frontier-ai-bulletin-15-04-24-to-21-04-24",
         
-          title: "a post with typograms",
+          title: "Frontier AI bulletin - 15/04/24 to 21/04/24",
         
-        description: "this is what included typograms code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/typograms/";
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
-      },{id: "post-a-post-that-can-be-cited",
+      },{id: "post-frontier-ai-bulletin-01-04-24-to-14-04-24",
         
-          title: "a post that can be cited",
+          title: "Frontier AI bulletin - 01/04/24 to 14/04/24",
         
-        description: "this is what a post that can be cited looks like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/post-citation/";
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
-      },{id: "post-a-post-with-pseudo-code",
+      },{id: "post-frontier-ai-bulletin-18-03-24-to-31-03-24",
         
-          title: "a post with pseudo code",
+          title: "Frontier AI bulletin - 18/03/24 to 31/03/24",
         
-        description: "this is what included pseudo code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/pseudocode/";
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
-      },{id: "post-a-post-with-code-diff",
+      },{id: "post-frontier-ai-bulletin-11-03-24-to-17-03-24",
         
-          title: "a post with code diff",
+          title: "Frontier AI bulletin - 11/03/24 to 17/03/24",
         
-        description: "this is how you can display code diffs",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/code-diff/";
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
-      },{id: "post-a-post-with-advanced-image-components",
+      },{id: "post-frontier-ai-bulletin-03-03-24-to-10-03-24",
         
-          title: "a post with advanced image components",
+          title: "Frontier AI bulletin - 03/03/24 to 10/03/24",
         
-        description: "this is what advanced image components could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/advanced-images/";
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
-      },{id: "post-a-post-with-vega-lite",
+      },{id: "post-frontier-ai-bulletin-26-02-24-to-03-03-24",
         
-          title: "a post with vega lite",
+          title: "Frontier AI bulletin - 26/02/24 to 03/03/24",
         
-        description: "this is what included vega lite code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/vega-lite/";
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
-      },{id: "post-a-post-with-geojson",
+      },{id: "post-retail-animism",
         
-          title: "a post with geojson",
+          title: "Retail animism",
         
-        description: "this is what included geojson code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/geojson-map/";
-          
-        },
-      },{id: "post-a-post-with-echarts",
-        
-          title: "a post with echarts",
-        
-        description: "this is what included echarts code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/echarts/";
-          
-        },
-      },{id: "post-a-post-with-chart-js",
-        
-          title: "a post with chart.js",
-        
-        description: "this is what included chart.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/chartjs/";
-          
-        },
-      },{id: "post-a-post-with-tikzjax",
-        
-          title: "a post with TikZJax",
-        
-        description: "this is what included TikZ code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tikzjax/";
-          
-        },
-      },{id: "post-a-post-with-bibliography",
-        
-          title: "a post with bibliography",
-        
-        description: "an example of a blog post with bibliography",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/post-bibliography/";
-          
-        },
-      },{id: "post-a-post-with-jupyter-notebook",
-        
-          title: "a post with jupyter notebook",
-        
-        description: "an example of a blog post with jupyter notebook",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/jupyter-notebook/";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/custom-blockquotes/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-audios",
-        
-          title: "a post with audios",
-        
-        description: "this is what included audios could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/audios/";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/videos/";
-          
-        },
-      },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-        
-          title: "displaying beautiful tables with Bootstrap Tables",
-        
-        description: "an example of how to use Bootstrap Tables",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tables/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents",
-        
-          title: "a post with table of contents",
-        
-        description: "an example of a blog post with table of contents",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-giscus-comments",
-        
-          title: "a post with giscus comments",
-        
-        description: "an example of a blog post with giscus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2022/giscus-comments/";
+            window.location.href = "/blog/2024/Retail-Animism/";
           
         },
       },{id: "post-displaying-external-posts-on-your-al-folio-blog",
@@ -292,105 +292,6 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
-      },{id: "post-a-post-with-redirect",
-        
-          title: "a post with redirect",
-        
-        description: "you can also redirect to assets like pdf",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/assets/pdf/example_pdf.pdf";
-          
-        },
-      },{id: "post-a-post-with-diagrams",
-        
-          title: "a post with diagrams",
-        
-        description: "an example of a blog post with diagrams",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2021/diagrams/";
-          
-        },
-      },{id: "post-a-distill-style-blog-post",
-        
-          title: "a distill-style blog post",
-        
-        description: "an example of a distill-style blog post and main elements",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2021/distill/";
-          
-        },
-      },{id: "post-a-post-with-twitter",
-        
-          title: "a post with twitter",
-        
-        description: "an example of a blog post with twitter",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2020/twitter/";
-          
-        },
-      },{id: "post-a-post-with-disqus-comments",
-        
-          title: "a post with disqus comments",
-        
-        description: "an example of a blog post with disqus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/disqus-comments/";
-          
-        },
-      },{id: "post-a-post-with-math",
-        
-          title: "a post with math",
-        
-        description: "an example of a blog post with some math",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/math/";
-          
-        },
-      },{id: "post-a-post-with-code",
-        
-          title: "a post with code",
-        
-        description: "an example of a blog post with some code",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/code/";
-          
-        },
-      },{id: "post-a-post-with-images",
-        
-          title: "a post with images",
-        
-        description: "this is what included images could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/images/";
-          
-        },
-      },{id: "post-a-post-with-formatting-and-links",
-        
-          title: "a post with formatting and links",
-        
-        description: "march &amp; april, looking forward to summer",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/formatting-and-links/";
           
         },
       },{id: "news-i-ve-joined-the-frontier-ai-taskforce-as-research-strategy-and-delivery-manager-for-its-safeguards-analysis-team",
