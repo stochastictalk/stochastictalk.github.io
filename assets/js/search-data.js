@@ -240,17 +240,6 @@ ninja.data = [{
             window.location.href = "/blog/2024/Bulletin/";
           
         },
-      },{id: "post-frontier-ai-bulletin-26-02-24-to-03-03-24",
-        
-          title: "Frontier AI bulletin - 26/02/24 to 03/03/24",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/Bulletin/";
-          
-        },
       },{id: "post-retail-animism",
         
           title: "Retail animism",
@@ -260,6 +249,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/Retail-Animism/";
+          
+        },
+      },{id: "post-frontier-ai-bulletin-26-02-24-to-03-03-24",
+        
+          title: "Frontier AI bulletin - 26/02/24 to 03/03/24",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/Bulletin/";
           
         },
       },{id: "post-displaying-external-posts-on-your-al-folio-blog",
