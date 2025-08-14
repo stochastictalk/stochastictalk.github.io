@@ -288,6 +288,9 @@ ninja.data = [{
           section: "News",},{id: "news-coz-presented-our-work-on-transcript-analysis-to-the-technical-ai-governance-workshop-at-icml-in-his-talk-transcript-analysis-and-how-it-relates-to-technical-governance",
           title: 'Coz presented our work on transcript analysis to the Technical AI Governance workshop...',
           description: "",
+          section: "News",},{id: "news-mario-presented-our-work-on-automated-agent-activity-inventories-to-the-university-of-aberdeen-s-human-centered-ai-network",
+          title: 'Mario presented our work on automated agent activity inventories to the University of...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
