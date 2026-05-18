@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en" class="fonts-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jerome Wynne</title>
+  <meta name="description" content="Jerome Wynne &mdash; AI research engineer at Prolific.">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="alternate icon" href="/assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .fonts-loading body { overflow: hidden; }
+    .fonts-loading .site-header,
+    .fonts-loading main,
+    .fonts-loading .site-footer { opacity: 0; }
+    .site-header, main, .site-footer { transition: opacity 320ms ease; }
+    .loader {
+      position: fixed;
+      inset: 0;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 320ms ease, visibility 320ms;
+    }
+    .loader::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #111111;
+      animation: loader-pulse 950ms ease-in-out infinite;
+    }
+    @keyframes loader-pulse {
+      0%, 100% { opacity: 0.28; transform: scale(0.85); }
+      50% { opacity: 1; transform: scale(1.18); }
+    }
+    .fonts-loaded .loader {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="lava-header">
+      <canvas class="lava-header__canvas" id="lava-canvas" aria-hidden="true"></canvas>
+      <h1 class="lava-header__title">Jerome Wynne</h1>
+    </div>
+    <div class="site-header__nav">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#bio" data-tab-link="bio" aria-current="page">Bio</a>
+      <a href="#research" data-tab-link="research">Research</a>
+    </nav>
+    <ul class="icons" aria-label="Profile links">
+      <li><a href="https://github.com/jeromewynne-jpg" aria-label="GitHub" rel="me">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a></li>
+      <li><a href="https://scholar.google.com/citations?user=YRXYSgcAAAAJ&amp;hl=en" aria-label="Google Scholar" rel="me">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/jerome-wynne/" aria-label="LinkedIn" rel="me">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a></li>
+      <li><a href="https://x.com/readonlymemery" aria-label="X" rel="me">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a></li>
+      <li><a href="mailto:jerome.wynne@proton.me" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+      </a></li>
+    </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="tab" data-tab="bio">
+    <div class="about__body">
+      <img class="about__photo" src="/assets/img/prof_pic.jpg" alt="Jerome Wynne">
+      <p>I&rsquo;m currently working on AI training, evaluation, and scaled human feedback as an AI research engineer at <a href="https://www.prolific.com/">Prolific</a>. I previously worked at the <a href="https://www.aisi.gov.uk/">UK AI Security Institute</a> in the Science of Evaluations group, and at <a href="https://faculty.ai/">Faculty</a> as a data scientist.</p>
+      <p>I did a year on a PhD in statistics at Imperial College London, which is also where I studied for my MSc in statistics. My undergraduate degree was in design engineering at the University of Bristol, with electives in maths and computer science.</p>
+    </div>
+
+    <section aria-labelledby="updates">
+      <h2 id="updates">Updates</h2>
+      <dl class="entries">
+        <div class="entry">
+          <dt><time datetime="2026-05-18">18 May 2026</time></dt>
+          <dd>Paper <em>Is This a Bot? AI Models Lie About Being Human, Even When Not Asked To</em> accepted to the <a href="https://taigr-workshop.com/">TAIGR workshop</a> at ICML 2026.</dd>
+        </div>
+        <div class="entry">
+          <dt><time datetime="2026-04-30">30 Apr 2026</time></dt>
+          <dd>Paper <em><a href="https://arxiv.org/abs/2603.02277">Quantifying Frontier LLM Capabilities for Container Sandbox Escape</a></em>, with the <a href="https://www.aisi.gov.uk/">UK AI Security Institute</a>, accepted to <a href="https://icml.cc/">ICML 2026</a>.</dd>
+        </div>
+        <div class="entry">
+          <dt><time datetime="2026-04-24">24 Apr 2026</time></dt>
+          <dd>Attended <a href="https://iclr.cc/Conferences/2026">ICLR</a> in Rio de Janeiro.</dd>
+        </div>
+        <div class="entry">
+          <dt><time datetime="2026-04-17">17 Apr 2026</time></dt>
+          <dd>Submitted the <em>MetaLoop</em> benchmark to <a href="https://www.kaggle.com/competitions/kaggle-measuring-agi">Measuring Progress Toward AGI</a>.</dd>
+        </div>
+        <div class="entry">
+          <dt><time datetime="2026-02-26">26 Feb 2026</time></dt>
+          <dd>Presented <em>Who Does Your AI Serve? Manipulation By and Of AI Assistants</em> at the <a href="https://aimii.info/">AIMII workshop</a>, IASEAI 2026, Paris.</dd>
+        </div>
+      </dl>
+      <div hidden>
+        <dl class="entries">
+          <div class="entry">
+            <dt><time datetime="2026-02-19">19 Feb 2026</time></dt>
+            <dd>Gave the talk <em>People, Please! Why &amp; Where to Loop People into Agent Evals</em> at <a href="https://aidevworld.com/">AI DevWorld</a>.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-02-10">10 Feb 2026</time></dt>
+            <dd>Released a new episode of Prolific&rsquo;s <a href="https://www.youtube.com/playlist?list=PLFc0vY4YexlCh_tkVk9eWXJNJm4l7zd_R"><em>The Frontier</em></a> podcast.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-02-03">3 Feb 2026</time></dt>
+            <dd>Runner-up at <a href="https://blackforestlabs.ai/">Black Forest Labs&rsquo;</a> hackathon with <em>Art of the Deal</em>.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-01-09">9 Jan 2026</time></dt>
+            <dd>Won <a href="https://apartresearch.com/sprints/ai-manipulation-hackathon-2026-01-09-to-2026-01-11">Apart Research&rsquo;s manipulation hackathon</a>.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-10-26">26 Oct 2025</time></dt>
+            <dd>Joined <a href="https://www.prolific.com/">Prolific</a> as a research engineer, focused on AI training, evaluation, and scaled human feedback.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-08-15">15 Aug 2025</time></dt>
+            <dd>Coz presented our work on automated agent inventories at <a href="https://techgov.ai">ERA&rsquo;s Technical AI Governance Forum</a> in London: <em>Towards a Technical Roadmap to Govern Frontier AI</em>.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-08-07">7 Aug 2025</time></dt>
+            <dd>Mario presented our work on automated agent activity inventories to the <a href="https://www.abdn.ac.uk/research/interdisciplinary/data-and-artificial-intelligence/human-centred-ai-network-/">Human-Centred AI Network</a> at the University of Aberdeen.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-07-18">18 Jul 2025</time></dt>
+            <dd>Coz presented our transcript-analysis work at the <a href="https://www.taig-icml.com/schedule">TAIG workshop</a> at ICML 2025: <em>Transcript Analysis and How it Relates to Technical Governance</em>.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-07-17">17 Jul 2025</time></dt>
+            <dd>We published <a href="https://www.aisi.gov.uk/work/international-joint-testing-exercise-agentic-testing">results from the third joint international testing exercise</a>.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-07-16">16 Jul 2025</time></dt>
+            <dd>We published <a href="https://www.aisi.gov.uk/work/our-approach-to-ai-capability-elicitation">an elicitation checklist</a> to guide elicitation during LLM safety evaluations.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2024-11-01">1 Nov 2024</time></dt>
+            <dd>Joined AISI&rsquo;s Science of Evaluations team to work on tools and methods for analysing LLM transcripts used in pre-deployment testing.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2023-12-22">22 Dec 2023</time></dt>
+            <dd>Joined the Frontier AI Taskforce as Research Strategy and Delivery Manager for its Safeguards Analysis team.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <button type="button" class="easter-egg-trigger" id="dvd-trigger" aria-label="Toggle dvd.js">&#9211;</button>
+    </div>
+
+    <div class="tab" data-tab="research" hidden>
+      <section aria-labelledby="papers">
+        <h2 id="papers">Papers and articles</h2>
+        <dl class="entries">
+          <div class="entry">
+            <dt><time datetime="2026-07">Jul 2026</time></dt>
+            <dd><em>Is This a Bot? AI Models Lie About Being Human, Even When Not Asked To</em>. <a href="https://taigr-workshop.com/">TAIGR workshop</a>, ICML 2026.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-04">Apr 2026</time></dt>
+            <dd><a href="https://arxiv.org/abs/2604.09563"><em>Seven simple steps for log analysis in AI systems</em></a>. Dubois, Zorer, Hamin, Skinner, Souly, Wynne, Coppock et al.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-03">Mar 2026</time></dt>
+            <dd><a href="https://arxiv.org/abs/2603.02277"><em>Quantifying Frontier LLM Capabilities for Container Sandbox Escape</em></a>. Marchand, O Cathain, Wynne, Giavridis, Deverett, Wilkinson, Gwartz, Coppock. ICML 2026.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-02">Feb 2026</time></dt>
+            <dd><em>Who Does Your AI Serve? Manipulation By and Of AI Assistants</em>. Petrova, Wynne. <a href="https://aimii.info/">AIMII workshop</a>, IASEAI 2026.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-10">Oct 2025</time></dt>
+            <dd><a href="https://www.lesswrong.com/posts/e8nMZewwonifENQYB/assuring-agent-safety-evaluations-by-analysing-transcripts"><em>Assuring Agent Safety Evaluations By Analysing Transcripts</em></a>. UK AI Security Institute, Science of Evaluations.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-04">Apr 2025</time></dt>
+            <dd><a href="https://arxiv.org/abs/2410.09024"><em>AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents</em></a>. Andriushchenko, Souly, Dziemian, Duenas, Lin, Wang, &hellip;, Wynne et al. ICLR 2025.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section aria-labelledby="talks">
+        <h2 id="talks">Talks and posters</h2>
+        <dl class="entries">
+          <div class="entry">
+            <dt><time datetime="2026-02-26">Feb 2026</time></dt>
+            <dd><em>Who Does Your AI Serve? Manipulation By and Of AI Assistants</em>. <a href="https://aimii.info/">AIMII workshop</a>, IASEAI 2026, Paris.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-02-19">Feb 2026</time></dt>
+            <dd><em>People, Please! Why &amp; Where to Loop People into Agent Evals</em>. <a href="https://aidevworld.com/">AI DevWorld</a>, San Jose.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-02">Feb 2026</time></dt>
+            <dd>Kick-off panel, <a href="https://blackforestlabs.ai/">Black Forest Labs</a> FLUX.2 hackathon, London.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2025-11">Nov 2025</time></dt>
+            <dd>Panel with Nora Petrova: <a href="https://luma.com/0zbx2brz"><em>What 25,000 Humans Really Think About AI</em></a>. Prolific Meetup #3, San Francisco.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2024-03-28">Mar 2024</time></dt>
+            <dd><a href="https://hlsi.org.uk/whats-on/gazing-at-the-ceiling/"><em>Gazing at the Ceiling</em></a>. Highgate Literary and Scientific Institute, London.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section aria-labelledby="dissertations">
+        <h2 id="dissertations">Dissertations</h2>
+        <dl class="entries">
+          <div class="entry">
+            <dt><time datetime="2020">2020</time></dt>
+            <dd><a href="https://github.com/stochastictalk/msc_statistics_thesis"><em>Automating Model Criticism for Linear Regression</em></a>. MSc in Statistics, Imperial College London.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2019">2019</time></dt>
+            <dd><a href="https://github.com/stochastictalk/beng_engineering_design_thesis"><em>Autonomous Learning for Adaptive Agents &mdash; Autonomous Systems for Independent Living</em></a>. BEng in Engineering Design, University of Bristol.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section aria-labelledby="competitions">
+        <h2 id="competitions">Competitions</h2>
+        <dl class="entries">
+          <div class="entry">
+            <dt><time datetime="2026-04-17">Apr 2026</time></dt>
+            <dd>Submitted the <em>MetaLoop</em> benchmark to <a href="https://www.kaggle.com/competitions/kaggle-measuring-agi">Measuring Progress Toward AGI</a>.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-02-03">Feb 2026</time></dt>
+            <dd>Runner-up at <a href="https://blackforestlabs.ai/">Black Forest Labs&rsquo;</a> hackathon with <em>Art of the Deal</em>, London.</dd>
+          </div>
+          <div class="entry">
+            <dt><time datetime="2026-01-09">Jan 2026</time></dt>
+            <dd>Winner, <a href="https://apartresearch.com/sprints/ai-manipulation-hackathon-2026-01-09-to-2026-01-11">Apart Research&rsquo;s manipulation hackathon</a>.</dd>
+          </div>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <div id="dvd-host" aria-hidden="true"></div>
+
+  <footer class="site-footer">
+    Last updated <time id="last-updated" datetime="2026-05-18">May 2026</time>
+  </footer>
+
+  <script src="/assets/js/lava.js" defer></script>
+  <script>
+    (function () {
+      var reveal = function () {
+        document.documentElement.classList.remove('fonts-loading');
+        document.documentElement.classList.add('fonts-loaded');
+      };
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(reveal);
+      }
+      setTimeout(reveal, 2500);
+    })();
+
+    (function () {
+      var el = document.getElementById('last-updated');
+      if (!el) return;
+      var d = new Date(document.lastModified);
+      if (isNaN(d)) return;
+      el.textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+      el.setAttribute('datetime', d.toISOString().slice(0, 10));
+    })();
+
+    (function () {
+      var tabs = document.querySelectorAll('[data-tab]');
+      var links = document.querySelectorAll('[data-tab-link]');
+
+      function setTab(name) {
+        for (var i = 0; i < tabs.length; i++) {
+          tabs[i].hidden = tabs[i].dataset.tab !== name;
+        }
+        for (var j = 0; j < links.length; j++) {
+          if (links[j].dataset.tabLink === name) {
+            links[j].setAttribute('aria-current', 'page');
+          } else {
+            links[j].removeAttribute('aria-current');
+          }
+        }
+      }
+
+      function fromHash() {
+        var hash = (window.location.hash || '').replace('#', '');
+        setTab(hash === 'research' ? 'research' : 'bio');
+      }
+
+      window.addEventListener('hashchange', fromHash);
+      fromHash();
+    })();
+
+    (function () {
+      var trigger = document.getElementById('dvd-trigger');
+      if (!trigger) return;
+
+      var pressed = false;
+      var loading = false;
+
+      function loadScript(src) {
+        return new Promise(function (resolve, reject) {
+          var existing = document.querySelector('script[data-src="' + src + '"]');
+          if (existing && existing.dataset.loaded === 'true') return resolve();
+          if (existing) {
+            existing.addEventListener('load', function () { resolve(); });
+            existing.addEventListener('error', reject);
+            return;
+          }
+          var s = document.createElement('script');
+          s.src = src;
+          s.dataset.src = src;
+          s.addEventListener('load', function () { s.dataset.loaded = 'true'; resolve(); });
+          s.addEventListener('error', reject);
+          document.head.appendChild(s);
+        });
+      }
+
+      function toggle() {
+        if (loading) return;
+        if (window.__dvdToggle) {
+          window.__dvdToggle();
+          pressed = !pressed;
+          trigger.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+          return;
+        }
+        loading = true;
+        loadScript('https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js')
+          .then(function () { return loadScript('/assets/js/dvd-embed.js'); })
+          .then(function () {
+            loading = false;
+            if (window.__dvdToggle) {
+              window.__dvdToggle();
+              pressed = true;
+              trigger.setAttribute('aria-pressed', 'true');
+            }
+          })
+          .catch(function () { loading = false; });
+      }
+
+      trigger.addEventListener('click', toggle);
+      trigger.setAttribute('aria-pressed', 'false');
+    })();
+  </script>
+</body>
+</html>

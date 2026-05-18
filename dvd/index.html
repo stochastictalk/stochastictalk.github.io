@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dvd.js &middot; Jerome Wynne</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="alternate icon" href="/assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&display=swap">
+  <style>
+    html, body {
+      margin: 0;
+      background: #ffffff;
+      font-family: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+      color: #6b6b6b;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    #sketch {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .dvd-back {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      color: #6b6b6b;
+      text-decoration: none;
+      padding: 0.4rem 0.6rem;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 4px;
+      backdrop-filter: blur(4px);
+      transition: color 160ms ease;
+      z-index: 10;
+    }
+    .dvd-back:hover { color: #111111; }
+  </style>
+</head>
+<body>
+  <a class="dvd-back" href="/" id="dvd-back">&larr; back</a>
+  <div id="sketch"></div>
+  <script>
+    if (window.self !== window.top) {
+      var b = document.getElementById('dvd-back');
+      if (b) b.style.display = 'none';
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <script src="/assets/js/dvd.js"></script>
+</body>
+</html>
