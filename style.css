@@ -271,12 +271,10 @@ section + section { margin-top: 3.5rem; }
 .entry { display: contents; }
 
 dt {
-  font-family: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--muted);
-  padding-top: 0.32rem;
+  padding-top: 0.14rem;
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.01em;
   white-space: nowrap;
 }
 
@@ -303,7 +301,7 @@ dd em { font-style: italic; color: var(--ink); }
 }
 
 .site-footer time {
-  font-family: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ---------- Easter egg trigger ---------- */

@@ -1,0 +1,24 @@
+# Jerome Wynne
+
+> Jerome Wynne researches how AI systems can be used to manipulate people. He works at Apart Research as an evaluator advising the EU AI Office on harmful manipulation risks.
+
+His interests are people misusing AI agents to manipulate others, particularly for authoritarian and criminal ends, and agents manipulating people of their own accord. He previously built evals and eval tools at the UK AI Security Institute and Prolific, and worked as a data scientist at Faculty. He holds an MSc in statistics from Imperial College London and a BEng in design engineering from the University of Bristol.
+
+## Papers
+
+- [Is This a Bot? AI Models Lie About Being Human, Even When Not Asked To](https://github.com/jeromewynne-jpg/is-this-a-bot/blob/main/paper/paper.pdf): TAIGR workshop, ICML 2026.
+- [Quantifying Frontier LLM Capabilities for Container Sandbox Escape](https://arxiv.org/abs/2603.02277): ICML 2026.
+- [Seven simple steps for log analysis in AI systems](https://arxiv.org/abs/2604.09563): 2026.
+- Who Does Your AI Serve? Manipulation By and Of AI Assistants: AIMII workshop, IASEAI 2026.
+- [Assuring Agent Safety Evaluations By Analysing Transcripts](https://www.lesswrong.com/posts/e8nMZewwonifENQYB/assuring-agent-safety-evaluations-by-analysing-transcripts): UK AI Security Institute, 2025.
+- [AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents](https://arxiv.org/abs/2410.09024): ICLR 2025.
+
+## Contact
+
+- [Website](https://stochastictalk.github.io/)
+- [Email](mailto:jerome.wynne@proton.me)
+- [GitHub (stochastictalk)](https://github.com/stochastictalk)
+- [GitHub (jerome-apart)](https://github.com/jerome-apart)
+- [Google Scholar](https://scholar.google.com/citations?user=YRXYSgcAAAAJ)
+- [LinkedIn](https://www.linkedin.com/in/jerome-wynne/)
+- [X](https://x.com/readonlymemery)
